@@ -1,0 +1,1213 @@
+16:24:31 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:315:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: echo_server.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: echo_server.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22468	   1752	  85116	 109336	  1ab18	echo_server.elf
+'Finished building: echo_server.elf.size'
+' '
+16:25:25 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:315:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: echo_server.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: echo_server.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22468	   1752	  85116	 109336	  1ab18	echo_server.elf
+'Finished building: echo_server.elf.size'
+' '
+16:26:43 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+make: Nothing to be done for 'all'.
+16:28:31 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:315:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: echo_server.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: echo_server.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22468	   1752	  85116	 109336	  1ab18	echo_server.elf
+'Finished building: echo_server.elf.size'
+' '
+21:48:44 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:196:2: warning: implicit declaration of function 'EmacLiteEnablePhyLoopBack'; did you mean 'XEmacLite_EnableLoopBack'? [-Wimplicit-function-declaration]
+  EmacLiteEnablePhyLoopBack(EmacLiteInstPtr,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~
+  XEmacLite_EnableLoopBack
+../src/main.c:196:28: error: 'EmacLiteInstPtr' undeclared (first use in this function); did you mean 'EmacLiteInstance'?
+  EmacLiteEnablePhyLoopBack(EmacLiteInstPtr,
+                            ^~~~~~~~~~~~~~~
+                            EmacLiteInstance
+../src/main.c:196:28: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:197:17: error: expected ';' before 'Status'
+    LocalMacAddr)
+                 ^
+                 ;
+../src/main.c:204:2:
+  Status = EmacLitePingReplyExample(EMAC_DEVICE_ID);
+  ~~~~~~          
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:316:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+At top level:
+../src/main.c:232:5: warning: 'EmacLitePingReplyExample' defined but not used [-Wunused-function]
+ int EmacLitePingReplyExample(u16 DeviceId)
+     ^~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:56: src/main.o] Error 1
+21:49:09 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'EmacLitePingReplyExample':
+../src/main.c:237:2: warning: implicit declaration of function 'EmacLiteEnablePhyLoopBack'; did you mean 'XEmacLite_EnableLoopBack'? [-Wimplicit-function-declaration]
+  EmacLiteEnablePhyLoopBack(EmacLiteInstPtr,
+  ^~~~~~~~~~~~~~~~~~~~~~~~~
+  XEmacLite_EnableLoopBack
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:315:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: echo_server.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: echo_server.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23336	   1752	  85112	 110200	  1ae78	echo_server.elf
+'Finished building: echo_server.elf.size'
+' '
+21:49:14 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+make: Nothing to be done for 'all'.
+21:49:46 **** Build of project tbd_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_3/src"
+make -C microblaze_0/libsrc/bram_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_9/src"
+make -C microblaze_0/libsrc/cpu_v2_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/emaclite_v4_4/src"
+make -C microblaze_0/libsrc/emaclite_v4_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/intc_v3_9/src"
+make -C microblaze_0/libsrc/intc_v3_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/lwip211_v1_0/src"
+make -C microblaze_0/libsrc/lwip211_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v7_0/src"
+make -C microblaze_0/libsrc/standalone_v7_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/tmrctr_v4_5/src"
+make -C microblaze_0/libsrc/tmrctr_v4_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_3/src"
+make -C microblaze_0/libsrc/bram_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_9/src"
+make -C microblaze_0/libsrc/cpu_v2_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/emaclite_v4_4/src"
+make -C microblaze_0/libsrc/emaclite_v4_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling emaclite"
+"Running Make libs in microblaze_0/libsrc/intc_v3_9/src"
+make -C microblaze_0/libsrc/intc_v3_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/lwip211_v1_0/src"
+make -C microblaze_0/libsrc/lwip211_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling lwip src and adapter files"
+contrib/ports/xilinx/netif/xadapter.c: In function 'eth_link_detect':
+contrib/ports/xilinx/netif/xadapter.c:364:8: warning: unused variable 'link_speed' [-Wunused-variable]
+  u32_t link_speed, phy_link_status;
+        ^~~~~~~~~~
+"Running Make libs in microblaze_0/libsrc/standalone_v7_0/src"
+make -C microblaze_0/libsrc/standalone_v7_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/tmrctr_v4_5/src"
+make -C microblaze_0/libsrc/tmrctr_v4_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling tmrctr"
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+21:50:01 **** Build of configuration Debug for project tbd ****
+make all 
+'Building file: ../src/echo.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -I../../tbd_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
+'Finished building: ../src/echo.c'
+' '
+'Building file: ../src/i2c_access.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_access.o" -I../../tbd_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c_access.d" -MT"src/i2c_access.o" -o "src/i2c_access.o" "../src/i2c_access.c"
+'Finished building: ../src/i2c_access.c'
+' '
+'Building file: ../src/iic_phyreset.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_phyreset.o" -I../../tbd_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/iic_phyreset.d" -MT"src/iic_phyreset.o" -o "src/iic_phyreset.o" "../src/iic_phyreset.c"
+'Finished building: ../src/iic_phyreset.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../tbd_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../tbd_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/platform_mb.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_mb.o" -I../../tbd_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform_mb.d" -MT"src/platform_mb.o" -o "src/platform_mb.o" "../src/platform_mb.c"
+'Finished building: ../src/platform_mb.c'
+' '
+'Building file: ../src/platform_ppc.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_ppc.o" -I../../tbd_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform_ppc.d" -MT"src/platform_ppc.o" -o "src/platform_ppc.o" "../src/platform_ppc.c"
+'Finished building: ../src/platform_ppc.c'
+' '
+'Building file: ../src/platform_zynq.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_zynq.o" -I../../tbd_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform_zynq.d" -MT"src/platform_zynq.o" -o "src/platform_zynq.o" "../src/platform_zynq.c"
+'Finished building: ../src/platform_zynq.c'
+' '
+'Building file: ../src/platform_zynqmp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_zynqmp.o" -I../../tbd_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform_zynqmp.d" -MT"src/platform_zynqmp.o" -o "src/platform_zynqmp.o" "../src/platform_zynqmp.c"
+'Finished building: ../src/platform_zynqmp.c'
+' '
+'Building file: ../src/sfp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sfp.o" -I../../tbd_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sfp.d" -MT"src/sfp.o" -o "src/sfp.o" "../src/sfp.c"
+'Finished building: ../src/sfp.c'
+' '
+'Building file: ../src/si5324.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/si5324.o" -I../../tbd_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/si5324.d" -MT"src/si5324.o" -o "src/si5324.o" "../src/si5324.c"
+'Finished building: ../src/si5324.c'
+' '
+'Building target: tbd.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../tbd_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "tbd.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: tbd.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size tbd.elf  |tee "tbd.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 112160	   1792	3962320	4076272	 3e32f0	tbd.elf
+'Finished building: tbd.elf.size'
+' '
+21:50:17 **** Auto Build of project tbd_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_3/src"
+make -C microblaze_0/libsrc/bram_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_9/src"
+make -C microblaze_0/libsrc/cpu_v2_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/emaclite_v4_4/src"
+make -C microblaze_0/libsrc/emaclite_v4_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/intc_v3_9/src"
+make -C microblaze_0/libsrc/intc_v3_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/lwip211_v1_0/src"
+make -C microblaze_0/libsrc/lwip211_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v7_0/src"
+make -C microblaze_0/libsrc/standalone_v7_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/tmrctr_v4_5/src"
+make -C microblaze_0/libsrc/tmrctr_v4_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_3/src"
+make -C microblaze_0/libsrc/bram_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_9/src"
+make -C microblaze_0/libsrc/cpu_v2_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/emaclite_v4_4/src"
+make -C microblaze_0/libsrc/emaclite_v4_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling emaclite"
+"Running Make libs in microblaze_0/libsrc/intc_v3_9/src"
+make -C microblaze_0/libsrc/intc_v3_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/lwip211_v1_0/src"
+make -C microblaze_0/libsrc/lwip211_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling lwip src and adapter files"
+contrib/ports/xilinx/netif/xadapter.c: In function 'eth_link_detect':
+contrib/ports/xilinx/netif/xadapter.c:364:8: warning: unused variable 'link_speed' [-Wunused-variable]
+  u32_t link_speed, phy_link_status;
+        ^~~~~~~~~~
+"Running Make libs in microblaze_0/libsrc/standalone_v7_0/src"
+make -C microblaze_0/libsrc/standalone_v7_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/tmrctr_v4_5/src"
+make -C microblaze_0/libsrc/tmrctr_v4_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling tmrctr"
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+21:50:29 **** Auto Build of configuration Debug for project tbd ****
+make all 
+'Building file: ../src/echo.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -I../../tbd_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
+'Finished building: ../src/echo.c'
+' '
+'Building file: ../src/i2c_access.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_access.o" -I../../tbd_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c_access.d" -MT"src/i2c_access.o" -o "src/i2c_access.o" "../src/i2c_access.c"
+'Finished building: ../src/i2c_access.c'
+' '
+'Building file: ../src/iic_phyreset.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_phyreset.o" -I../../tbd_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/iic_phyreset.d" -MT"src/iic_phyreset.o" -o "src/iic_phyreset.o" "../src/iic_phyreset.c"
+'Finished building: ../src/iic_phyreset.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../tbd_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../tbd_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/platform_mb.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_mb.o" -I../../tbd_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform_mb.d" -MT"src/platform_mb.o" -o "src/platform_mb.o" "../src/platform_mb.c"
+'Finished building: ../src/platform_mb.c'
+' '
+'Building file: ../src/sfp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sfp.o" -I../../tbd_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sfp.d" -MT"src/sfp.o" -o "src/sfp.o" "../src/sfp.c"
+'Finished building: ../src/sfp.c'
+' '
+'Building file: ../src/si5324.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/si5324.o" -I../../tbd_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/si5324.d" -MT"src/si5324.o" -o "src/si5324.o" "../src/si5324.c"
+'Finished building: ../src/si5324.c'
+' '
+'Building target: tbd.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../tbd_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "tbd.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: tbd.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size tbd.elf  |tee "tbd.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 111872	   1792	3962320	4075984	 3e31d0	tbd.elf
+'Finished building: tbd.elf.size'
+' '
+21:51:39 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+make: Nothing to be done for 'all'.
+21:52:45 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:315:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: echo_server.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: echo_server.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22468	   1752	  85116	 109336	  1ab18	echo_server.elf
+'Finished building: echo_server.elf.size'
+' '
+21:53:11 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:315:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: echo_server.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: echo_server.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22468	   1752	  85116	 109336	  1ab18	echo_server.elf
+'Finished building: echo_server.elf.size'
+' '
+21:53:18 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:315:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: echo_server.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: echo_server.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22468	   1752	  85116	 109336	  1ab18	echo_server.elf
+'Finished building: echo_server.elf.size'
+' '
+21:53:24 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+make: Nothing to be done for 'all'.
+21:53:33 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+make: Nothing to be done for 'all'.
+21:54:37 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:317:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: echo_server.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: echo_server.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22528	   1752	  85112	 109392	  1ab50	echo_server.elf
+'Finished building: echo_server.elf.size'
+' '
+21:54:40 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+make: Nothing to be done for 'all'.
+21:56:01 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:319:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: echo_server.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: echo_server.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22568	   1752	  85112	 109432	  1ab78	echo_server.elf
+'Finished building: echo_server.elf.size'
+' '
+21:56:04 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+make: Nothing to be done for 'all'.
+22:40:51 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:321:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: echo_server.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: echo_server.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22620	   1752	  85116	 109488	  1abb0	echo_server.elf
+'Finished building: echo_server.elf.size'
+' '
+22:40:56 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+make: Nothing to be done for 'all'.
+22:41:18 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:321:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: echo_server.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: echo_server.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22620	   1752	  85116	 109488	  1abb0	echo_server.elf
+'Finished building: echo_server.elf.size'
+' '
+22:41:31 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+make: Nothing to be done for 'all'.
+22:41:54 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:319:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: echo_server.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: echo_server.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22568	   1752	  85112	 109432	  1ab78	echo_server.elf
+'Finished building: echo_server.elf.size'
+' '
+22:42:10 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:319:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: echo_server.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: echo_server.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22552	   1752	  85112	 109416	  1ab68	echo_server.elf
+'Finished building: echo_server.elf.size'
+' '
+22:42:24 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:319:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: echo_server.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: echo_server.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22552	   1752	  85112	 109416	  1ab68	echo_server.elf
+'Finished building: echo_server.elf.size'
+' '
+23:16:45 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:319:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: echo_server.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: echo_server.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22596	   1752	  85116	 109464	  1ab98	echo_server.elf
+'Finished building: echo_server.elf.size'
+' '
+23:17:58 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+make: Nothing to be done for 'all'.
+23:21:46 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:319:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: echo_server.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: echo_server.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22636	   1752	  85116	 109504	  1abc0	echo_server.elf
+'Finished building: echo_server.elf.size'
+' '
+23:23:04 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:319:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+../src/main.c: In function 'PrintSourceMAC':
+../src/main.c:681:21: error: 'MAC_ADDR_LEN_U16' undeclared (first use in this function); did you mean 'MAC_ADDR_LEN'?
+     for (i = 0; i < MAC_ADDR_LEN_U16; ++i) {
+                     ^~~~~~~~~~~~~~~~
+                     MAC_ADDR_LEN
+../src/main.c:681:21: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:56: src/main.o] Error 1
+23:23:09 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:319:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: echo_server.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: echo_server.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22640	   1752	  85112	 109504	  1abc0	echo_server.elf
+'Finished building: echo_server.elf.size'
+' '
+23:23:40 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:350:2: warning: implicit declaration of function 'PrintSourceMAC' [-Wimplicit-function-declaration]
+  PrintSourceMAC(RxFramePtr)
+  ^~~~~~~~~~~~~~
+../src/main.c:350:28: error: expected ';' before 'if'
+  PrintSourceMAC(RxFramePtr)
+                            ^
+                            ;
+../src/main.c:354:2:
+  if (PacketType == BROADCAST_PACKET) {
+  ~~                         
+../src/main.c:319:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+../src/main.c:318:6: warning: unused variable 'CheckSum' [-Wunused-variable]
+  u16 CheckSum;
+      ^~~~~~~~
+../src/main.c:316:7: warning: variable 'TxFramePtr' set but not used [-Wunused-but-set-variable]
+  u16 *TxFramePtr;
+       ^~~~~~~~~~
+../src/main.c: At top level:
+../src/main.c:673:6: warning: conflicting types for 'PrintSourceMAC'
+ void PrintSourceMAC(u16 *RxFramePtr) {
+      ^~~~~~~~~~~~~~
+../src/main.c:350:2: note: previous implicit declaration of 'PrintSourceMAC' was here
+  PrintSourceMAC(RxFramePtr)
+  ^~~~~~~~~~~~~~
+../src/main.c:711:12: warning: 'CheckSumCalculation' defined but not used [-Wunused-function]
+ static u16 CheckSumCalculation(u16 *RxFramePtr, int StartLoc, int Length)
+            ^~~~~~~~~~~~~~~~~~~
+../src/main.c:155:11: warning: 'LocalIpAddr' defined but not used [-Wunused-variable]
+ static u8 LocalIpAddr[IP_ADDR_SIZE] = {
+           ^~~~~~~~~~~
+make: *** [src/subdir.mk:56: src/main.o] Error 1
+23:24:13 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:350:28: error: expected ';' before 'if'
+  PrintSourceMAC(RxFramePtr)
+                            ^
+                            ;
+../src/main.c:354:2:
+  if (PacketType == BROADCAST_PACKET) {
+  ~~                         
+../src/main.c:319:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+../src/main.c:318:6: warning: unused variable 'CheckSum' [-Wunused-variable]
+  u16 CheckSum;
+      ^~~~~~~~
+../src/main.c:316:7: warning: variable 'TxFramePtr' set but not used [-Wunused-but-set-variable]
+  u16 *TxFramePtr;
+       ^~~~~~~~~~
+At top level:
+../src/main.c:711:12: warning: 'CheckSumCalculation' defined but not used [-Wunused-function]
+ static u16 CheckSumCalculation(u16 *RxFramePtr, int StartLoc, int Length)
+            ^~~~~~~~~~~~~~~~~~~
+../src/main.c:155:11: warning: 'LocalIpAddr' defined but not used [-Wunused-variable]
+ static u8 LocalIpAddr[IP_ADDR_SIZE] = {
+           ^~~~~~~~~~~
+make: *** [src/subdir.mk:56: src/main.o] Error 1
+23:24:32 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:319:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: echo_server.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: echo_server.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22948	   1752	  85116	 109816	  1acf8	echo_server.elf
+'Finished building: echo_server.elf.size'
+' '
+23:24:39 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+make: Nothing to be done for 'all'.
+23:26:18 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:319:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+../src/main.c: In function 'PrintSourceMAC':
+../src/main.c:682:21: error: 'MAC_ADDR_LEN_U16' undeclared (first use in this function); did you mean 'MAC_ADDR_LEN'?
+     for (i = 0; i < MAC_ADDR_LEN_U16; ++i) {
+                     ^~~~~~~~~~~~~~~~
+                     MAC_ADDR_LEN
+../src/main.c:682:21: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:56: src/main.o] Error 1
+23:26:22 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:319:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: echo_server.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: echo_server.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22952	   1752	  85112	 109816	  1acf8	echo_server.elf
+'Finished building: echo_server.elf.size'
+' '
+23:26:30 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+make: Nothing to be done for 'all'.
+23:27:33 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:319:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+../src/main.c: In function 'PrintSourceMAC':
+../src/main.c:687:17: error: 'MAC_ADDR_LEN_U16' undeclared (first use in this function); did you mean 'MAC_ADDR_LEN'?
+         if (i < MAC_ADDR_LEN_U16 - 1) {
+                 ^~~~~~~~~~~~~~~~
+                 MAC_ADDR_LEN
+../src/main.c:687:17: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:56: src/main.o] Error 1
+23:27:36 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:319:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: echo_server.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: echo_server.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22984	   1752	  85112	 109848	  1ad18	echo_server.elf
+'Finished building: echo_server.elf.size'
+' '
+23:27:58 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:319:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: echo_server.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: echo_server.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22984	   1752	  85112	 109848	  1ad18	echo_server.elf
+'Finished building: echo_server.elf.size'
+' '
+23:28:03 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+make: Nothing to be done for 'all'.
+02:48:12 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:351:66: error: expected ';' before 'PrintSourceMAC'
+   xil_printf("Packet Type: DESTINATION_MAC_ADDRESS_MATCHES_FPGA")
+                                                                  ^
+                                                                  ;
+../src/main.c:354:2:
+  PrintSourceMAC(RxFramePtr);
+  ~~~~~~~~~~~~~~                                                   
+../src/main.c:319:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+At top level:
+../src/main.c:677:6: warning: 'PrintSourceMAC' defined but not used [-Wunused-function]
+ void PrintSourceMAC(u16 *RxFramePtr) {
+      ^~~~~~~~~~~~~~
+make: *** [src/subdir.mk:56: src/main.o] Error 1
+02:48:26 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:319:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: echo_server.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: echo_server.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23136	   1752	  85112	 110000	  1adb0	echo_server.elf
+'Finished building: echo_server.elf.size'
+' '
+02:50:35 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:319:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: echo_server.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: echo_server.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23204	   1752	  85116	 110072	  1adf8	echo_server.elf
+'Finished building: echo_server.elf.size'
+' '
+02:50:46 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:319:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: echo_server.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: echo_server.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23208	   1752	  85112	 110072	  1adf8	echo_server.elf
+'Finished building: echo_server.elf.size'
+' '
+02:50:48 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:319:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: echo_server.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: echo_server.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23204	   1752	  85116	 110072	  1adf8	echo_server.elf
+'Finished building: echo_server.elf.size'
+' '
+02:51:00 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:504:78: error: expected ')' before ';' token
+   xil_printf("EtherType: %d", Xil_Ntohs(*(RxFramePtr + ETHER_PROTO_TYPE_LOC));
+                                                                              ^
+                                                                              )
+../src/main.c:674:4: error: expected ';' before '}' token
+   }
+    ^
+    ;
+  }
+  ~  
+../src/main.c:319:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+../src/main.c:318:6: warning: unused variable 'CheckSum' [-Wunused-variable]
+  u16 CheckSum;
+      ^~~~~~~~
+At top level:
+../src/main.c:717:12: warning: 'CheckSumCalculation' defined but not used [-Wunused-function]
+ static u16 CheckSumCalculation(u16 *RxFramePtr, int StartLoc, int Length)
+            ^~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:56: src/main.o] Error 1
+02:51:17 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:319:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: echo_server.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: echo_server.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23204	   1752	  85116	 110072	  1adf8	echo_server.elf
+'Finished building: echo_server.elf.size'
+' '
+02:54:19 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:608:8: error: 'ipByte' undeclared (first use in this function); did you mean 'inbyte'?
+        ipByte = *(RxFramePtr + Index); // Get the current byte of the IP address
+        ^~~~~~
+        inbyte
+../src/main.c:608:8: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:319:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:56: src/main.o] Error 1
+02:54:33 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:319:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: echo_server.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: echo_server.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23292	   1752	  85116	 110160	  1ae50	echo_server.elf
+'Finished building: echo_server.elf.size'
+' '
+02:54:45 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:319:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: echo_server.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: echo_server.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23292	   1752	  85116	 110160	  1ae50	echo_server.elf
+'Finished building: echo_server.elf.size'
+' '
+02:54:51 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+make: Nothing to be done for 'all'.
+02:55:26 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:618:27: error: expected ';' before '}' token
+         xil_printf("\r\n")
+                           ^
+                           ;
+        }
+        ~                   
+../src/main.c:319:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:56: src/main.o] Error 1
+02:55:32 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:618:27: error: expected ';' before '}' token
+         xil_printf("\r\n")
+                           ^
+                           ;
+        }
+        ~                   
+../src/main.c:319:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:56: src/main.o] Error 1
+02:55:38 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:319:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: echo_server.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: echo_server.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23316	   1752	  85116	 110184	  1ae68	echo_server.elf
+'Finished building: echo_server.elf.size'
+' '
+02:55:43 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+make: Nothing to be done for 'all'.
+02:56:14 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:319:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: echo_server.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: echo_server.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23320	   1752	  85112	 110184	  1ae68	echo_server.elf
+'Finished building: echo_server.elf.size'
+' '
+02:56:24 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+make: Nothing to be done for 'all'.
+03:02:38 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:319:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: echo_server.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: echo_server.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23208	   1752	  85112	 110072	  1adf8	echo_server.elf
+'Finished building: echo_server.elf.size'
+' '
+03:02:49 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+make: Nothing to be done for 'all'.
+03:12:07 **** Incremental Build of configuration Debug for project tbd ****
+make all 
+make: Nothing to be done for 'all'.
+03:12:41 **** Incremental Build of configuration Debug for project tbd ****
+make all 
+make: Nothing to be done for 'all'.
+03:13:48 **** Incremental Build of configuration Debug for project tbd ****
+make all 
+make: Nothing to be done for 'all'.

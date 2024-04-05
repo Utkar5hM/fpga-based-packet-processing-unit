@@ -1,0 +1,77 @@
+Vivado Simulator 2019.1
+Time resolution is 1 fs
+Block Memory Generator module mbdesign_wrapper.mbdesign_i.microblaze_0_local_memory.lmb_bram.inst.native_mem_mapped_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+WARNING: file design.txt could not be opened
+ *** Warning: The analog data file design.txt for XADC instance mbdesign_wrapper.mbdesign_i.mig_7series_0.u_mbdesign_mig_7series_0_0_mig.temp_mon_enabled.u_tempmon.xadc_supplied_temperature.XADC_inst was not found. Use the SIM_MONITOR_FILE parameter to specify the analog data file name or use the default name: design.txt.
+
+############# Write Clocks PLLE2_ADV Parameters #############
+
+nCK_PER_CLK      =       4
+CLK_PERIOD       =    5000
+CLKIN1_PERIOD    =   5.000
+DIVCLK_DIVIDE    =       2
+CLKFBOUT_MULT    =      13
+VCO_PERIOD       =   769.0
+CLKOUT0_DIVIDE_F =       2
+CLKOUT1_DIVIDE   =       4
+CLKOUT2_DIVIDE   =      64
+CLKOUT3_DIVIDE   =      16
+CLKOUT0_PERIOD   =    1538
+CLKOUT1_PERIOD   =    3076
+CLKOUT2_PERIOD   =   49216
+CLKOUT3_PERIOD   =   12304
+CLKOUT4_PERIOD   =    6152
+############################################################
+
+############# MMCME2_ADV Parameters #############
+
+MMCM_MULT_F           =          14
+MMCM_VCO_FREQ (MHz)   = 1200.000
+MMCM_VCO_PERIOD       = 833.333
+#################################################
+
+mbdesign_wrapper.mbdesign_i.mig_7series_0.u_mbdesign_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : BYTE_LANES_B0 = f BYTE_LANES_B1 = 0 DATA_CTL_B0 = 5 DATA_CTL_B1 = 0
+mbdesign_wrapper.mbdesign_i.mig_7series_0.u_mbdesign_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : HIGHEST_LANE =           4 HIGHEST_LANE_B0 =           4 HIGHEST_LANE_B1 =           0
+mbdesign_wrapper.mbdesign_i.mig_7series_0.u_mbdesign_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : HIGHEST_BANK =           1
+mbdesign_wrapper.mbdesign_i.mig_7series_0.u_mbdesign_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : FREQ_REF_PERIOD         = 1538.00 
+mbdesign_wrapper.mbdesign_i.mig_7series_0.u_mbdesign_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : DDR_TCK                 = 3077 
+mbdesign_wrapper.mbdesign_i.mig_7series_0.u_mbdesign_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_S2_TAPS_SIZE         = 12.02 
+mbdesign_wrapper.mbdesign_i.mig_7series_0.u_mbdesign_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_EARLY       = 1 
+mbdesign_wrapper.mbdesign_i.mig_7series_0.u_mbdesign_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_OFFSET      = 1610.30 
+mbdesign_wrapper.mbdesign_i.mig_7series_0.u_mbdesign_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_META_ZONE   = 200.00 
+mbdesign_wrapper.mbdesign_i.mig_7series_0.u_mbdesign_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_STG2_FINE_INTR_DLY   = 890.73 
+mbdesign_wrapper.mbdesign_i.mig_7series_0.u_mbdesign_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_STG2_COARSE_INTR_DLY = 575.97 
+mbdesign_wrapper.mbdesign_i.mig_7series_0.u_mbdesign_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_STG2_INTRINSIC_DELAY = 1466.70 
+mbdesign_wrapper.mbdesign_i.mig_7series_0.u_mbdesign_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_DELAY       = 60 
+mbdesign_wrapper.mbdesign_i.mig_7series_0.u_mbdesign_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_INTRINSIC_DELAY      = 1466.70 
+mbdesign_wrapper.mbdesign_i.mig_7series_0.u_mbdesign_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_DELAY                = 2187.64 
+mbdesign_wrapper.mbdesign_i.mig_7series_0.u_mbdesign_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_OCLK_DELAY           = 0 
+mbdesign_wrapper.mbdesign_i.mig_7series_0.u_mbdesign_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : L_PHY_0_PO_FINE_DELAY   = 60 
+mbdesign_wrapper.mbdesign_i.mig_7series_0.u_mbdesign_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_STG1_INTRINSIC_DELAY = 0.00 
+mbdesign_wrapper.mbdesign_i.mig_7series_0.u_mbdesign_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_STG2_INTRINSIC_DELAY = 865.48 
+mbdesign_wrapper.mbdesign_i.mig_7series_0.u_mbdesign_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_INTRINSIC_DELAY      = 865.48 
+mbdesign_wrapper.mbdesign_i.mig_7series_0.u_mbdesign_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_MAX_STG2_DELAY       = 756.98 
+mbdesign_wrapper.mbdesign_i.mig_7series_0.u_mbdesign_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_OFFSET               = 123.00 
+mbdesign_wrapper.mbdesign_i.mig_7series_0.u_mbdesign_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_STG2_DELAY           = 123.00 
+mbdesign_wrapper.mbdesign_i.mig_7series_0.u_mbdesign_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy :PI_STG2_DELAY_CAND       = 123.00 
+mbdesign_wrapper.mbdesign_i.mig_7series_0.u_mbdesign_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : DEFAULT_RCLK_DELAY      = 10 
+mbdesign_wrapper.mbdesign_i.mig_7series_0.u_mbdesign_mig_7series_0_0_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : RCLK_SELECT_EDGE        = 111 
+Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value. mbdesign_wrapper.mbdesign_i.axi_ethernetlite_0.U0.XEMAC_I.EMAC_I.RX.INST_RX_INTRFCE.I_RX_FIFO.xpm_fifo_instance.xpm_fifo_async_inst.gnuram_async_fifo.xpm_fifo_base_inst.gen_sdpram.xpm_memory_base_inst.config_drc
+Time: 1 ps  Iteration: 0  Process: /mbdesign_wrapper/mbdesign_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/xpm_fifo_instance/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/Initial290_34  File: /wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv
+Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value. mbdesign_wrapper.mbdesign_i.axi_ethernetlite_0.U0.XEMAC_I.EMAC_I.TX.INST_TX_INTRFCE.I_TX_FIFO.xpm_fifo_instance.xpm_fifo_async_inst.gnuram_async_fifo.xpm_fifo_base_inst.gen_sdpram.xpm_memory_base_inst.config_drc
+Time: 1 ps  Iteration: 0  Process: /mbdesign_wrapper/mbdesign_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/xpm_fifo_instance/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/Initial290_34  File: /wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv
+Info: [XPM_MEMORY 20-2] MEMORY_INIT_FILE (none), MEMORY_INIT_PARAM together specify no memory initialization. Initial memory contents will be all 0's. mbdesign_wrapper.mbdesign_i.axi_ethernetlite_0.U0.XEMAC_I.TX_PING.xpm_mem_gen.xpm_memory_inst_1.xpm_memory_base_inst.config_drc  0
+Time: 1 ps  Iteration: 0  Process: /mbdesign_wrapper/mbdesign_i/axi_ethernetlite_0/U0/XEMAC_I/TX_PING/xpm_mem_gen/xpm_memory_inst_1/xpm_memory_base_inst/Initial290_215  File: /wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv
+Info: [XPM_MEMORY 20-2] MEMORY_INIT_FILE (none), MEMORY_INIT_PARAM together specify no memory initialization. Initial memory contents will be all 0's. mbdesign_wrapper.mbdesign_i.axi_ethernetlite_0.U0.XEMAC_I.TX_PING.xpm_mem_gen.xpm_memory_inst_2.xpm_memory_base_inst.config_drc  0
+Time: 1 ps  Iteration: 0  Process: /mbdesign_wrapper/mbdesign_i/axi_ethernetlite_0/U0/XEMAC_I/TX_PING/xpm_mem_gen/xpm_memory_inst_2/xpm_memory_base_inst/Initial290_215  File: /wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv
+Info: [XPM_MEMORY 20-2] MEMORY_INIT_FILE (none), MEMORY_INIT_PARAM together specify no memory initialization. Initial memory contents will be all 0's. mbdesign_wrapper.mbdesign_i.axi_ethernetlite_0.U0.XEMAC_I.RX_PING.xpm_mem_gen.xpm_memory_inst_1.xpm_memory_base_inst.config_drc  0
+Time: 1 ps  Iteration: 0  Process: /mbdesign_wrapper/mbdesign_i/axi_ethernetlite_0/U0/XEMAC_I/RX_PING/xpm_mem_gen/xpm_memory_inst_1/xpm_memory_base_inst/Initial290_215  File: /wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv
+Info: [XPM_MEMORY 20-2] MEMORY_INIT_FILE (none), MEMORY_INIT_PARAM together specify no memory initialization. Initial memory contents will be all 0's. mbdesign_wrapper.mbdesign_i.axi_ethernetlite_0.U0.XEMAC_I.RX_PING.xpm_mem_gen.xpm_memory_inst_2.xpm_memory_base_inst.config_drc  0
+Time: 1 ps  Iteration: 0  Process: /mbdesign_wrapper/mbdesign_i/axi_ethernetlite_0/U0/XEMAC_I/RX_PING/xpm_mem_gen/xpm_memory_inst_2/xpm_memory_base_inst/Initial290_215  File: /wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv
+Info: [XPM_MEMORY 20-2] MEMORY_INIT_FILE (none), MEMORY_INIT_PARAM together specify no memory initialization. Initial memory contents will be all 0's. mbdesign_wrapper.mbdesign_i.axi_ethernetlite_0.U0.XEMAC_I.tx_pong_gen.TX_PONG_I.xpm_mem_gen.xpm_memory_inst_1.xpm_memory_base_inst.config_drc  0
+Time: 1 ps  Iteration: 0  Process: /mbdesign_wrapper/mbdesign_i/axi_ethernetlite_0/U0/XEMAC_I/tx_pong_gen/TX_PONG_I/xpm_mem_gen/xpm_memory_inst_1/xpm_memory_base_inst/Initial290_215  File: /wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv
+Info: [XPM_MEMORY 20-2] MEMORY_INIT_FILE (none), MEMORY_INIT_PARAM together specify no memory initialization. Initial memory contents will be all 0's. mbdesign_wrapper.mbdesign_i.axi_ethernetlite_0.U0.XEMAC_I.tx_pong_gen.TX_PONG_I.xpm_mem_gen.xpm_memory_inst_2.xpm_memory_base_inst.config_drc  0
+Time: 1 ps  Iteration: 0  Process: /mbdesign_wrapper/mbdesign_i/axi_ethernetlite_0/U0/XEMAC_I/tx_pong_gen/TX_PONG_I/xpm_mem_gen/xpm_memory_inst_2/xpm_memory_base_inst/Initial290_215  File: /wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv
+Info: [XPM_MEMORY 20-2] MEMORY_INIT_FILE (none), MEMORY_INIT_PARAM together specify no memory initialization. Initial memory contents will be all 0's. mbdesign_wrapper.mbdesign_i.axi_ethernetlite_0.U0.XEMAC_I.rx_pong_gen.RX_PONG_I.xpm_mem_gen.xpm_memory_inst_1.xpm_memory_base_inst.config_drc  0
+Time: 1 ps  Iteration: 0  Process: /mbdesign_wrapper/mbdesign_i/axi_ethernetlite_0/U0/XEMAC_I/rx_pong_gen/RX_PONG_I/xpm_mem_gen/xpm_memory_inst_1/xpm_memory_base_inst/Initial290_215  File: /wrk/2019.1/continuous/2019_05_24_2552052/packages/customer/vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv
+Info: [XPM_MEMORY 20-2] MEMORY_INIT_FILE (none), MEMORY_INIT_PARAM together specify no memory initialization. Initial memor

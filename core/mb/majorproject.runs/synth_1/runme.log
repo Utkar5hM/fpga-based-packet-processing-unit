@@ -1,0 +1,654 @@
+
+*** Running vivado
+    with args -log mbdesign_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mbdesign_wrapper.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source mbdesign_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+add_files: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 385.293 ; gain = 73.621
+Command: synth_design -top mbdesign_wrapper -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14636 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 836.996 ; gain = 176.969
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mbdesign_wrapper' [C:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/hdl/mbdesign_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:36115]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (1#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:36115]
+INFO: [Synth 8-6157] synthesizing module 'mbdesign' [C:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/synth/mbdesign.v:541]
+INFO: [Synth 8-6157] synthesizing module 'mbdesign_axi_ethernetlite_0_0' [C:/Users/utkar/majorproject/majorproject.runs/synth_1/.Xil/Vivado-27092-utg14-win/realtime/mbdesign_axi_ethernetlite_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mbdesign_axi_ethernetlite_0_0' (2#1) [C:/Users/utkar/majorproject/majorproject.runs/synth_1/.Xil/Vivado-27092-utg14-win/realtime/mbdesign_axi_ethernetlite_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'axi_ethernetlite_0' of module 'mbdesign_axi_ethernetlite_0_0' has 34 connections declared, but only 33 given [C:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/synth/mbdesign.v:875]
+INFO: [Synth 8-6157] synthesizing module 'mbdesign_axi_smc_0' [C:/Users/utkar/majorproject/majorproject.runs/synth_1/.Xil/Vivado-27092-utg14-win/realtime/mbdesign_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mbdesign_axi_smc_0' (3#1) [C:/Users/utkar/majorproject/majorproject.runs/synth_1/.Xil/Vivado-27092-utg14-win/realtime/mbdesign_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mbdesign_axi_timer_0_0' [C:/Users/utkar/majorproject/majorproject.runs/synth_1/.Xil/Vivado-27092-utg14-win/realtime/mbdesign_axi_timer_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mbdesign_axi_timer_0_0' (4#1) [C:/Users/utkar/majorproject/majorproject.runs/synth_1/.Xil/Vivado-27092-utg14-win/realtime/mbdesign_axi_timer_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'axi_timer_0' of module 'mbdesign_axi_timer_0_0' has 26 connections declared, but only 23 given [C:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/synth/mbdesign.v:994]
+INFO: [Synth 8-6157] synthesizing module 'mbdesign_axi_uartlite_0_0' [C:/Users/utkar/majorproject/majorproject.runs/synth_1/.Xil/Vivado-27092-utg14-win/realtime/mbdesign_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mbdesign_axi_uartlite_0_0' (5#1) [C:/Users/utkar/majorproject/majorproject.runs/synth_1/.Xil/Vivado-27092-utg14-win/realtime/mbdesign_axi_uartlite_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'axi_uartlite_0' of module 'mbdesign_axi_uartlite_0_0' has 22 connections declared, but only 21 given [C:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/synth/mbdesign.v:1018]
+INFO: [Synth 8-6157] synthesizing module 'mbdesign_clk_wiz_1_0' [C:/Users/utkar/majorproject/majorproject.runs/synth_1/.Xil/Vivado-27092-utg14-win/realtime/mbdesign_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mbdesign_clk_wiz_1_0' (6#1) [C:/Users/utkar/majorproject/majorproject.runs/synth_1/.Xil/Vivado-27092-utg14-win/realtime/mbdesign_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mbdesign_mdm_1_0' [C:/Users/utkar/majorproject/majorproject.runs/synth_1/.Xil/Vivado-27092-utg14-win/realtime/mbdesign_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mbdesign_mdm_1_0' (7#1) [C:/Users/utkar/majorproject/majorproject.runs/synth_1/.Xil/Vivado-27092-utg14-win/realtime/mbdesign_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mbdesign_microblaze_0_0' [C:/Users/utkar/majorproject/majorproject.runs/synth_1/.Xil/Vivado-27092-utg14-win/realtime/mbdesign_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mbdesign_microblaze_0_0' (8#1) [C:/Users/utkar/majorproject/majorproject.runs/synth_1/.Xil/Vivado-27092-utg14-win/realtime/mbdesign_microblaze_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'microblaze_0' of module 'mbdesign_microblaze_0_0' has 126 connections declared, but only 108 given [C:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/synth/mbdesign.v:1060]
+INFO: [Synth 8-6157] synthesizing module 'mbdesign_microblaze_0_axi_intc_0' [C:/Users/utkar/majorproject/majorproject.runs/synth_1/.Xil/Vivado-27092-utg14-win/realtime/mbdesign_microblaze_0_axi_intc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mbdesign_microblaze_0_axi_intc_0' (9#1) [C:/Users/utkar/majorproject/majorproject.runs/synth_1/.Xil/Vivado-27092-utg14-win/realtime/mbdesign_microblaze_0_axi_intc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mbdesign_microblaze_0_axi_periph_0' [C:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/synth/mbdesign.v:1413]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_B58748' [C:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/synth/mbdesign.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_B58748' (10#1) [C:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/synth/mbdesign.v:12]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1JCI50P' [C:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/synth/mbdesign.v:144]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1JCI50P' (11#1) [C:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/synth/mbdesign.v:144]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_CRGIH7' [C:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/synth/mbdesign.v:276]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_CRGIH7' (12#1) [C:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/synth/mbdesign.v:276]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_1I0LFMY' [C:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/synth/mbdesign.v:408]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_1I0LFMY' (13#1) [C:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/synth/mbdesign.v:408]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1M0HWLM' [C:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/synth/mbdesign.v:2353]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1M0HWLM' (14#1) [C:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/synth/mbdesign.v:2353]
+INFO: [Synth 8-6157] synthesizing module 'mbdesign_xbar_0' [C:/Users/utkar/majorproject/majorproject.runs/synth_1/.Xil/Vivado-27092-utg14-win/realtime/mbdesign_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mbdesign_xbar_0' (15#1) [C:/Users/utkar/majorproject/majorproject.runs/synth_1/.Xil/Vivado-27092-utg14-win/realtime/mbdesign_xbar_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'mbdesign_xbar_0' has 40 connections declared, but only 38 given [C:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/synth/mbdesign.v:2078]
+INFO: [Synth 8-6155] done synthesizing module 'mbdesign_microblaze_0_axi_periph_0' (16#1) [C:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/synth/mbdesign.v:1413]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_1YKTTFW' [C:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/synth/mbdesign.v:2119]
+INFO: [Synth 8-6157] synthesizing module 'mbdesign_dlmb_bram_if_cntlr_0' [C:/Users/utkar/majorproject/majorproject.runs/synth_1/.Xil/Vivado-27092-utg14-win/realtime/mbdesign_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mbdesign_dlmb_bram_if_cntlr_0' (17#1) [C:/Users/utkar/majorproject/majorproject.runs/synth_1/.Xil/Vivado-27092-utg14-win/realtime/mbdesign_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mbdesign_dlmb_v10_0' [C:/Users/utkar/majorproject/majorproject.runs/synth_1/.Xil/Vivado-27092-utg14-win/realtime/mbdesign_dlmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mbdesign_dlmb_v10_0' (18#1) [C:/Users/utkar/majorproject/majorproject.runs/synth_1/.Xil/Vivado-27092-utg14-win/realtime/mbdesign_dlmb_v10_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'mbdesign_dlmb_v10_0' has 25 connections declared, but only 24 given [C:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/synth/mbdesign.v:2265]
+INFO: [Synth 8-6157] synthesizing module 'mbdesign_ilmb_bram_if_cntlr_0' [C:/Users/utkar/majorproject/majorproject.runs/synth_1/.Xil/Vivado-27092-utg14-win/realtime/mbdesign_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mbdesign_ilmb_bram_if_cntlr_0' (19#1) [C:/Users/utkar/majorproject/majorproject.runs/synth_1/.Xil/Vivado-27092-utg14-win/realtime/mbdesign_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mbdesign_ilmb_v10_0' [C:/Users/utkar/majorproject/majorproject.runs/synth_1/.Xil/Vivado-27092-utg14-win/realtime/mbdesign_ilmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mbdesign_ilmb_v10_0' (20#1) [C:/Users/utkar/majorproject/majorproject.runs/synth_1/.Xil/Vivado-27092-utg14-win/realtime/mbdesign_ilmb_v10_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'mbdesign_ilmb_v10_0' has 25 connections declared, but only 24 given [C:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/synth/mbdesign.v:2311]
+INFO: [Synth 8-6157] synthesizing module 'mbdesign_lmb_bram_0' [C:/Users/utkar/majorproject/majorproject.runs/synth_1/.Xil/Vivado-27092-utg14-win/realtime/mbdesign_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mbdesign_lmb_bram_0' (21#1) [C:/Users/utkar/majorproject/majorproject.runs/synth_1/.Xil/Vivado-27092-utg14-win/realtime/mbdesign_lmb_bram_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'mbdesign_lmb_bram_0' has 16 connections declared, but only 14 given [C:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/synth/mbdesign.v:2336]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_1YKTTFW' (22#1) [C:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/synth/mbdesign.v:2119]
+INFO: [Synth 8-6157] synthesizing module 'mbdesign_microblaze_0_xlconcat_0' [c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_microblaze_0_xlconcat_0/synth/mbdesign_microblaze_0_xlconcat_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 2 - type: integer 
+	Parameter NUM_PORTS bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_3_xlconcat' (23#1) [c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'mbdesign_microblaze_0_xlconcat_0' (24#1) [c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_microblaze_0_xlconcat_0/synth/mbdesign_microblaze_0_xlconcat_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'mbdesign_mig_7series_0_0' [C:/Users/utkar/majorproject/majorproject.runs/synth_1/.Xil/Vivado-27092-utg14-win/realtime/mbdesign_mig_7series_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mbdesign_mig_7series_0_0' (25#1) [C:/Users/utkar/majorproject/majorproject.runs/synth_1/.Xil/Vivado-27092-utg14-win/realtime/mbdesign_mig_7series_0_0_stub.v:5]
+WARNING: [Synth 8-7023] instance 'mig_7series_0' of module 'mbdesign_mig_7series_0_0' has 66 connections declared, but only 55 given [C:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/synth/mbdesign.v:1321]
+INFO: [Synth 8-6157] synthesizing module 'mbdesign_mii_to_rmii_0_0' [C:/Users/utkar/majorproject/majorproject.runs/synth_1/.Xil/Vivado-27092-utg14-win/realtime/mbdesign_mii_to_rmii_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mbdesign_mii_to_rmii_0_0' (26#1) [C:/Users/utkar/majorproject/majorproject.runs/synth_1/.Xil/Vivado-27092-utg14-win/realtime/mbdesign_mii_to_rmii_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mbdesign_rst_clk_wiz_1_100M_0' [C:/Users/utkar/majorproject/majorproject.runs/synth_1/.Xil/Vivado-27092-utg14-win/realtime/mbdesign_rst_clk_wiz_1_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mbdesign_rst_clk_wiz_1_100M_0' (27#1) [C:/Users/utkar/majorproject/majorproject.runs/synth_1/.Xil/Vivado-27092-utg14-win/realtime/mbdesign_rst_clk_wiz_1_100M_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_1_100M' of module 'mbdesign_rst_clk_wiz_1_100M_0' has 10 connections declared, but only 8 given [C:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/synth/mbdesign.v:1395]
+INFO: [Synth 8-6157] synthesizing module 'mbdesign_rst_mig_7series_0_81M_0' [C:/Users/utkar/majorproject/majorproject.runs/synth_1/.Xil/Vivado-27092-utg14-win/realtime/mbdesign_rst_mig_7series_0_81M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mbdesign_rst_mig_7series_0_81M_0' (28#1) [C:/Users/utkar/majorproject/majorproject.runs/synth_1/.Xil/Vivado-27092-utg14-win/realtime/mbdesign_rst_mig_7series_0_81M_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'rst_mig_7series_0_81M' of module 'mbdesign_rst_mig_7series_0_81M_0' has 10 connections declared, but only 6 given [C:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/synth/mbdesign.v:1404]
+INFO: [Synth 8-6155] done synthesizing module 'mbdesign' (29#1) [C:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/synth/mbdesign.v:541]
+INFO: [Synth 8-6155] done synthesizing module 'mbdesign_wrapper' (30#1) [C:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/hdl/mbdesign_wrapper.v:12]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In2[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In3[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In4[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In5[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In6[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In7[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In8[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In9[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In10[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In11[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In12[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In13[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In14[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In15[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In16[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In17[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In18[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In19[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In20[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In21[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In22[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In23[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In24[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In25[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In26[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In27[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In28[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In29[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In30[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In31[0]
+WARNING: [Synth 8-3331] design s00_couplers_imp_1M0HWLM has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1M0HWLM has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_1M0HWLM has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1M0HWLM has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m03_couplers_imp_1I0LFMY has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m03_couplers_imp_1I0LFMY has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m03_couplers_imp_1I0LFMY has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m03_couplers_imp_1I0LFMY has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_CRGIH7 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_CRGIH7 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_CRGIH7 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_CRGIH7 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_1JCI50P has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_1JCI50P has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_1JCI50P has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_1JCI50P has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_B58748 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_B58748 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_B58748 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_B58748 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design mbdesign_microblaze_0_axi_periph_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design mbdesign_microblaze_0_axi_periph_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design mbdesign_microblaze_0_axi_periph_0 has unconnected port M01_ACLK
+WARNING: [Synth 8-3331] design mbdesign_microblaze_0_axi_periph_0 has unconnected port M01_ARESETN
+WARNING: [Synth 8-3331] design mbdesign_microblaze_0_axi_periph_0 has unconnected port M02_ACLK
+WARNING: [Synth 8-3331] design mbdesign_microblaze_0_axi_periph_0 has unconnected port M02_ARESETN
+WARNING: [Synth 8-3331] design mbdesign_microblaze_0_axi_periph_0 has unconnected port M03_ACLK
+WARNING: [Synth 8-3331] design mbdesign_microblaze_0_axi_periph_0 has unconnected port M03_ARESETN
+WARNING: [Synth 8-3331] design mbdesign_microblaze_0_axi_periph_0 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design mbdesign_microblaze_0_axi_periph_0 has unconnected port S00_ARESETN
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 908.168 ; gain = 248.141
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 908.168 ; gain = 248.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 908.168 ; gain = 248.141
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_microblaze_0_0/mbdesign_microblaze_0_0/mbdesign_microblaze_0_0_in_context.xdc] for cell 'mbdesign_i/microblaze_0'
+Finished Parsing XDC File [c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_microblaze_0_0/mbdesign_microblaze_0_0/mbdesign_microblaze_0_0_in_context.xdc] for cell 'mbdesign_i/microblaze_0'
+Parsing XDC File [c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_dlmb_v10_0/mbdesign_dlmb_v10_0/mbdesign_dlmb_v10_0_in_context.xdc] for cell 'mbdesign_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_dlmb_v10_0/mbdesign_dlmb_v10_0/mbdesign_dlmb_v10_0_in_context.xdc] for cell 'mbdesign_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_ilmb_v10_0/mbdesign_ilmb_v10_0/mbdesign_dlmb_v10_0_in_context.xdc] for cell 'mbdesign_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_ilmb_v10_0/mbdesign_ilmb_v10_0/mbdesign_dlmb_v10_0_in_context.xdc] for cell 'mbdesign_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_dlmb_bram_if_cntlr_0/mbdesign_dlmb_bram_if_cntlr_0/mbdesign_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'mbdesign_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_dlmb_bram_if_cntlr_0/mbdesign_dlmb_bram_if_cntlr_0/mbdesign_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'mbdesign_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_ilmb_bram_if_cntlr_0/mbdesign_ilmb_bram_if_cntlr_0/mbdesign_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'mbdesign_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_ilmb_bram_if_cntlr_0/mbdesign_ilmb_bram_if_cntlr_0/mbdesign_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'mbdesign_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_lmb_bram_0/mbdesign_lmb_bram_0/mbdesign_lmb_bram_0_in_context.xdc] for cell 'mbdesign_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_lmb_bram_0/mbdesign_lmb_bram_0/mbdesign_lmb_bram_0_in_context.xdc] for cell 'mbdesign_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_xbar_0/mbdesign_xbar_0/mbdesign_xbar_0_in_context.xdc] for cell 'mbdesign_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_xbar_0/mbdesign_xbar_0/mbdesign_xbar_0_in_context.xdc] for cell 'mbdesign_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_microblaze_0_axi_intc_0/mbdesign_microblaze_0_axi_intc_0/mbdesign_microblaze_0_axi_intc_0_in_context.xdc] for cell 'mbdesign_i/microblaze_0_axi_intc'
+Finished Parsing XDC File [c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_microblaze_0_axi_intc_0/mbdesign_microblaze_0_axi_intc_0/mbdesign_microblaze_0_axi_intc_0_in_context.xdc] for cell 'mbdesign_i/microblaze_0_axi_intc'
+Parsing XDC File [c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mdm_1_0/mbdesign_mdm_1_0/mbdesign_mdm_1_0_in_context.xdc] for cell 'mbdesign_i/mdm_1'
+Finished Parsing XDC File [c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mdm_1_0/mbdesign_mdm_1_0/mbdesign_mdm_1_0_in_context.xdc] for cell 'mbdesign_i/mdm_1'
+Parsing XDC File [c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_clk_wiz_1_0/mbdesign_clk_wiz_1_0/mbdesign_clk_wiz_1_0_in_context.xdc] for cell 'mbdesign_i/clk_wiz_1'
+Finished Parsing XDC File [c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_clk_wiz_1_0/mbdesign_clk_wiz_1_0/mbdesign_clk_wiz_1_0_in_context.xdc] for cell 'mbdesign_i/clk_wiz_1'
+Parsing XDC File [c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_rst_clk_wiz_1_100M_0/mbdesign_rst_clk_wiz_1_100M_0/mbdesign_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'mbdesign_i/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_rst_clk_wiz_1_100M_0/mbdesign_rst_clk_wiz_1_100M_0/mbdesign_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'mbdesign_i/rst_clk_wiz_1_100M'
+Parsing XDC File [c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc] for cell 'mbdesign_i/mig_7series_0'
+Finished Parsing XDC File [c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc] for cell 'mbdesign_i/mig_7series_0'
+Parsing XDC File [c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mii_to_rmii_0_0/mbdesign_mii_to_rmii_0_0/mbdesign_mii_to_rmii_0_0_in_context.xdc] for cell 'mbdesign_i/mii_to_rmii_0'
+Finished Parsing XDC File [c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mii_to_rmii_0_0/mbdesign_mii_to_rmii_0_0/mbdesign_mii_to_rmii_0_0_in_context.xdc] for cell 'mbdesign_i/mii_to_rmii_0'
+Parsing XDC File [c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_axi_uartlite_0_0/mbdesign_axi_uartlite_0_0/mbdesign_axi_uartlite_0_0_in_context.xdc] for cell 'mbdesign_i/axi_uartlite_0'
+Finished Parsing XDC File [c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_axi_uartlite_0_0/mbdesign_axi_uartlite_0_0/mbdesign_axi_uartlite_0_0_in_context.xdc] for cell 'mbdesign_i/axi_uartlite_0'
+Parsing XDC File [c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_axi_ethernetlite_0_0/mbdesign_axi_ethernetlite_0_0/mbdesign_axi_ethernetlite_0_0_in_context.xdc] for cell 'mbdesign_i/axi_ethernetlite_0'
+Finished Parsing XDC File [c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_axi_ethernetlite_0_0/mbdesign_axi_ethernetlite_0_0/mbdesign_axi_ethernetlite_0_0_in_context.xdc] for cell 'mbdesign_i/axi_ethernetlite_0'
+Parsing XDC File [c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_axi_timer_0_0/mbdesign_axi_timer_0_0/mbdesign_axi_timer_0_0_in_context.xdc] for cell 'mbdesign_i/axi_timer_0'
+Finished Parsing XDC File [c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_axi_timer_0_0/mbdesign_axi_timer_0_0/mbdesign_axi_timer_0_0_in_context.xdc] for cell 'mbdesign_i/axi_timer_0'
+Parsing XDC File [c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_axi_smc_0/mbdesign_axi_smc_0/mbdesign_axi_smc_0_in_context.xdc] for cell 'mbdesign_i/axi_smc'
+Finished Parsing XDC File [c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_axi_smc_0/mbdesign_axi_smc_0/mbdesign_axi_smc_0_in_context.xdc] for cell 'mbdesign_i/axi_smc'
+Parsing XDC File [c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_rst_mig_7series_0_81M_0/mbdesign_rst_mig_7series_0_81M_0/mbdesign_rst_mig_7series_0_81M_0_in_context.xdc] for cell 'mbdesign_i/rst_mig_7series_0_81M'
+Finished Parsing XDC File [c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_rst_mig_7series_0_81M_0/mbdesign_rst_mig_7series_0_81M_0/mbdesign_rst_mig_7series_0_81M_0_in_context.xdc] for cell 'mbdesign_i/rst_mig_7series_0_81M'
+Parsing XDC File [C:/Users/utkar/majorproject/majorproject.srcs/constrs_1/new/eth_ref_clk.xdc]
+Finished Parsing XDC File [C:/Users/utkar/majorproject/majorproject.srcs/constrs_1/new/eth_ref_clk.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/utkar/majorproject/majorproject.srcs/constrs_1/new/eth_ref_clk.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mbdesign_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mbdesign_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/utkar/majorproject/majorproject.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/utkar/majorproject/majorproject.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 987.836 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 987.836 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'mbdesign_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 989.934 ; gain = 329.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 989.934 ; gain = 329.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_clk_wiz_1_0/mbdesign_clk_wiz_1_0/mbdesign_clk_wiz_1_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_clk_wiz_1_0/mbdesign_clk_wiz_1_0/mbdesign_clk_wiz_1_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_addr[0]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_addr[0]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_addr[10]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_addr[10]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_addr[11]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_addr[11]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_addr[12]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_addr[12]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_addr[1]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_addr[1]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_addr[2]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_addr[2]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_addr[3]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_addr[3]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_addr[4]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 21).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_addr[4]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 22).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_addr[5]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 23).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_addr[5]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 24).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_addr[6]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 25).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_addr[6]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 26).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_addr[7]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 27).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_addr[7]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 28).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_addr[8]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 29).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_addr[8]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 30).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_addr[9]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 31).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_addr[9]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 32).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_ba[0]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 33).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_ba[0]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 34).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_ba[1]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 35).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_ba[1]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 36).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_ba[2]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 37).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_ba[2]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 38).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_cas_n. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 39).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_cas_n. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 40).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_ck_n[0]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 41).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_ck_n[0]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 42).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_ck_p[0]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 43).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_ck_p[0]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 44).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_cke[0]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 45).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_cke[0]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 46).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_cs_n[0]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 47).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_cs_n[0]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 48).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dm[0]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 49).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dm[0]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 50).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dm[1]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 51).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dm[1]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 52).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dq[0]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 53).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dq[0]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 54).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dq[10]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 55).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dq[10]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 56).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dq[11]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 57).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dq[11]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 58).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dq[12]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 59).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dq[12]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 60).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dq[13]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 61).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dq[13]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 62).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dq[14]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 63).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dq[14]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 64).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dq[15]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 65).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dq[15]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 66).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dq[1]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 67).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dq[1]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 68).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dq[2]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 69).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dq[2]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 70).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dq[3]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 71).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dq[3]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 72).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dq[4]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 73).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dq[4]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 74).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dq[5]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 75).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dq[5]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 76).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dq[6]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 77).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dq[6]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 78).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dq[7]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 79).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dq[7]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 80).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dq[8]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 81).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dq[8]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 82).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dq[9]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 83).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dq[9]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 84).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dqs_n[0]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 85).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dqs_n[0]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 86).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dqs_n[1]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 87).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dqs_n[1]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 88).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dqs_p[0]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 89).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dqs_p[0]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 90).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_dqs_p[1]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 91).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_dqs_p[1]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 92).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_odt[0]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 93).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_odt[0]. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 94).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_ras_n. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 95).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_ras_n. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 96).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR2_0_we_n. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 97).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR2_0_we_n. (constraint file  c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0/mbdesign_mig_7series_0_0_in_context.xdc, line 98).
+Applied set_property DONT_TOUCH = true for mbdesign_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mbdesign_i/microblaze_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mbdesign_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mbdesign_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mbdesign_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mbdesign_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mbdesign_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mbdesign_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mbdesign_i/microblaze_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mbdesign_i/microblaze_0_axi_intc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mbdesign_i/microblaze_0_xlconcat. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mbdesign_i/mdm_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mbdesign_i/clk_wiz_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mbdesign_i/rst_clk_wiz_1_100M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mbdesign_i/mig_7series_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mbdesign_i/mii_to_rmii_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mbdesign_i/axi_uartlite_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mbdesign_i/axi_ethernetlite_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mbdesign_i/axi_timer_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mbdesign_i/axi_smc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mbdesign_i/rst_mig_7series_0_81M. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 989.934 ; gain = 329.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 989.934 ; gain = 329.906
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design mbdesign_microblaze_0_axi_periph_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design mbdesign_microblaze_0_axi_periph_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design mbdesign_microblaze_0_axi_periph_0 has unconnected port M01_ACLK
+WARNING: [Synth 8-3331] design mbdesign_microblaze_0_axi_periph_0 has unconnected port M01_ARESETN
+WARNING: [Synth 8-3331] design mbdesign_microblaze_0_axi_periph_0 has unconnected port M02_ACLK
+WARNING: [Synth 8-3331] design mbdesign_microblaze_0_axi_periph_0 has unconnected port M02_ARESETN
+WARNING: [Synth 8-3331] design mbdesign_microblaze_0_axi_periph_0 has unconnected port M03_ACLK
+WARNING: [Synth 8-3331] design mbdesign_microblaze_0_axi_periph_0 has unconnected port M03_ARESETN
+WARNING: [Synth 8-3331] design mbdesign_microblaze_0_axi_periph_0 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design mbdesign_microblaze_0_axi_periph_0 has unconnected port S00_ARESETN
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 989.934 ; gain = 329.906
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mbdesign_i/microblaze_0_local_memory/dlmb_bram_if_cntlr/BRAM_Clk_A' to pin 'mbdesign_i/microblaze_0_local_memory/dlmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mbdesign_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/BRAM_Clk_A' to pin 'mbdesign_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mbdesign_i/mdm_1/Dbg_Clk_0' to pin 'mbdesign_i/mdm_1/bbstub_Dbg_Clk_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mbdesign_i/mdm_1/Dbg_Update_0' to pin 'mbdesign_i/mdm_1/bbstub_Dbg_Update_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mbdesign_i/clk_wiz_1/clk_out1' to pin 'mbdesign_i/clk_wiz_1/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mbdesign_i/clk_wiz_1/clk_out2' to pin 'mbdesign_i/clk_wiz_1/bbstub_clk_out2/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mbdesign_i/clk_wiz_1/clk_out3' to pin 'mbdesign_i/clk_wiz_1/bbstub_clk_out3/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mbdesign_i/mig_7series_0/ui_addn_clk_0' to pin 'mbdesign_i/mig_7series_0/bbstub_ui_addn_clk_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mbdesign_i/mig_7series_0/ui_addn_clk_1' to pin 'mbdesign_i/mig_7series_0/bbstub_ui_addn_clk_1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mbdesign_i/mig_7series_0/ui_addn_clk_2' to pin 'mbdesign_i/mig_7series_0/bbstub_ui_addn_clk_2/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mbdesign_i/mig_7series_0/ui_addn_clk_3' to pin 'mbdesign_i/mig_7series_0/bbstub_ui_addn_clk_3/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mbdesign_i/mig_7series_0/ui_addn_clk_4' to pin 'mbdesign_i/mig_7series_0/bbstub_ui_addn_clk_4/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mbdesign_i/mig_7series_0/ui_clk' to pin 'mbdesign_i/mig_7series_0/bbstub_ui_clk/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mbdesign_i/axi_ethernetlite_0/phy_rx_clk' to pin 'mbdesign_i/mii_to_rmii_0/bbstub_rmii2mac_rx_clk/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mbdesign_i/axi_ethernetlite_0/phy_tx_clk' to pin 'mbdesign_i/mii_to_rmii_0/bbstub_rmii2mac_tx_clk/O'
+INFO: [Synth 8-5819] Moved 15 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 992.988 ; gain = 332.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 993.211 ; gain = 333.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1004.023 ; gain = 343.996
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1018.789 ; gain = 358.762
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1018.789 ; gain = 358.762
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1018.789 ; gain = 358.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1018.789 ; gain = 358.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1018.789 ; gain = 358.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1018.789 ; gain = 358.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------------------+----------+
+|      |BlackBox name                    |Instances |
++------+---------------------------------+----------+
+|1     |mbdesign_xbar_0                  |         1|
+|2     |mbdesign_axi_ethernetlite_0_0    |         1|
+|3     |mbdesign_axi_smc_0               |         1|
+|4     |mbdesign_axi_timer_0_0           |         1|
+|5     |mbdesign_axi_uartlite_0_0        |         1|
+|6     |mbdesign_clk_wiz_1_0             |         1|
+|7     |mbdesign_mdm_1_0                 |         1|
+|8     |mbdesign_microblaze_0_0          |         1|
+|9     |mbdesign_microblaze_0_axi_intc_0 |         1|
+|10    |mbdesign_mig_7series_0_0         |         1|
+|11    |mbdesign_mii_to_rmii_0_0         |         1|
+|12    |mbdesign_rst_clk_wiz_1_100M_0    |         1|
+|13    |mbdesign_rst_mig_7series_0_81M_0 |         1|
+|14    |mbdesign_dlmb_bram_if_cntlr_0    |         1|
+|15    |mbdesign_dlmb_v10_0              |         1|
+|16    |mbdesign_ilmb_bram_if_cntlr_0    |         1|
+|17    |mbdesign_ilmb_v10_0              |         1|
+|18    |mbdesign_lmb_bram_0              |         1|
++------+---------------------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------------+------+
+|      |Cell                             |Count |
++------+---------------------------------+------+
+|1     |mbdesign_axi_ethernetlite_0_0    |     1|
+|2     |mbdesign_axi_smc_0               |     1|
+|3     |mbdesign_axi_timer_0_0           |     1|
+|4     |mbdesign_axi_uartlite_0_0        |     1|
+|5     |mbdesign_clk_wiz_1_0             |     1|
+|6     |mbdesign_dlmb_bram_if_cntlr_0    |     1|
+|7     |mbdesign_dlmb_v10_0              |     1|
+|8     |mbdesign_ilmb_bram_if_cntlr_0    |     1|
+|9     |mbdesign_ilmb_v10_0              |     1|
+|10    |mbdesign_lmb_bram_0              |     1|
+|11    |mbdesign_mdm_1_0                 |     1|
+|12    |mbdesign_microblaze_0_0          |     1|
+|13    |mbdesign_microblaze_0_axi_intc_0 |     1|
+|14    |mbdesign_mig_7series_0_0         |     1|
+|15    |mbdesign_mii_to_rmii_0_0         |     1|
+|16    |mbdesign_rst_clk_wiz_1_100M_0    |     1|
+|17    |mbdesign_rst_mig_7series_0_81M_0 |     1|
+|18    |mbdesign_xbar_0                  |     1|
+|19    |IBUF                             |     6|
+|20    |IOBUF                            |     1|
+|21    |OBUF                             |     6|
++------+---------------------------------+------+
+
+Report Instance Areas: 
++------+------------------------------+--------------------------------------+------+
+|      |Instance                      |Module                                |Cells |
++------+------------------------------+--------------------------------------+------+
+|1     |top                           |                                      |  2160|
+|2     |  mbdesign_i                  |mbdesign                              |  2147|
+|3     |    microblaze_0_axi_periph   |mbdesign_microblaze_0_axi_periph_0    |   485|
+|4     |    microblaze_0_xlconcat     |mbdesign_microblaze_0_xlconcat_0      |     0|
+|5     |    microblaze_0_local_memory |microblaze_0_local_memory_imp_1YKTTFW |   496|
++------+------------------------------+--------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1018.789 ; gain = 358.762
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 1018.789 ; gain = 276.996
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1018.789 ; gain = 358.762
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1034.910 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+93 Infos, 82 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1034.910 ; gain = 649.617
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1034.910 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/utkar/majorproject/majorproject.runs/synth_1/mbdesign_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mbdesign_wrapper_utilization_synth.rpt -pb mbdesign_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 22 11:58:25 2024...
