@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Mon Jan 22 12:02:52 2024
+| Date         : Sat Apr  6 16:43:26 2024
 | Host         : utg14-win running 64-bit major release  (build 9200)
 | Command      : report_drc -file mbdesign_wrapper_drc_routed.rpt -pb mbdesign_wrapper_drc_routed.pb -rpx mbdesign_wrapper_drc_routed.rpx
 | Design       : mbdesign_wrapper
@@ -24,11 +24,12 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 25
+             Violations found: 26
 +-----------+----------+-----------------------------------------------------+------------+
 | Rule      | Severity | Description                                         | Violations |
 +-----------+----------+-----------------------------------------------------+------------+
 | CFGBVS-1  | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
+| PDRC-153  | Warning  | Gated clock check                                   | 1          |
 | PLIO-6    | Warning  | Placement Constraints Check for IO constraints      | 11         |
 | REQP-1617 | Warning  | use_IOB_register                                    | 11         |
 | REQP-1709 | Warning  | Clock output buffering                              | 1          |
@@ -48,6 +49,11 @@ Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_des
  #where value2 is the voltage provided to configuration bank 0
 
 Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net mbdesign_i/ecemptcamip_0/inst/ecemptcamip_v1_0_S00_AXI_inst/reg_data_out_reg[31]_i_2_n_0 is a gated clock net sourced by a combinational pin mbdesign_i/ecemptcamip_0/inst/ecemptcamip_v1_0_S00_AXI_inst/reg_data_out_reg[31]_i_2/O, cell mbdesign_i/ecemptcamip_0/inst/ecemptcamip_v1_0_S00_AXI_inst/reg_data_out_reg[31]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PLIO-6#1 Warning
@@ -167,7 +173,7 @@ Related violations: <none>
 
 RTSTAT-10#1 Warning
 No routable loads  
-2 net(s) have no routable loads. The problem bus(es) and/or net(s) are mbdesign_i/axi_smc/inst/m00_nodes/m00_b_node/inst/s_sc_areset, mbdesign_i/axi_smc/inst/m00_nodes/m00_r_node/inst/s_sc_areset.
+2 net(s) have no routable loads. The problem bus(es) and/or net(s) are mbdesign_i/axi_smc/inst/m00_nodes/m00_r_node/inst/s_sc_areset, mbdesign_i/axi_smc/inst/m00_nodes/m00_b_node/inst/s_sc_areset.
 Related violations: <none>
 
 

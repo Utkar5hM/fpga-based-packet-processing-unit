@@ -66,4 +66,7 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==mbdesign_axi_sm
 # IP: bd/mbdesign/ip/mbdesign_rst_mig_7series_0_81M_0/mbdesign_rst_mig_7series_0_81M_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==mbdesign_rst_mig_7series_0_81M_0 || ORIG_REF_NAME==mbdesign_rst_mig_7series_0_81M_0} -quiet] -quiet
 
+# IP: bd/mbdesign/ip/mbdesign_ecemptcamip_0_0/mbdesign_ecemptcamip_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==mbdesign_ecemptcamip_0_0 || ORIG_REF_NAME==mbdesign_ecemptcamip_0_0} -quiet] -quiet
+
 # XDC: bd/mbdesign/mbdesign_ooc.xdc

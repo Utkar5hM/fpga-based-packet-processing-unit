@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="37">
   <CompositeFile CompositeFileTopName="mbdesign" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1705904296"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1705904296"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1705904296"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1705904296"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1712401459"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1712401459"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1712401459"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1712401459"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\mbdesign_microblaze_0_0\mbdesign_microblaze_0_0.xci" Type="IP">
         <Instance HierarchyPath="microblaze_0"/>
@@ -176,6 +176,14 @@
       <File Name="sim\mbdesign.v" Type="Verilog">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\mbdesign_ecemptcamip_0_0\mbdesign_ecemptcamip_0_0.xci" Type="IP">
+        <Instance HierarchyPath="ecemptcamip_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="mbdesign.bmm" Type="BMM">

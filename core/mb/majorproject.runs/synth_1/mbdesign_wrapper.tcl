@@ -17,7 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param chipscope.maxJobs 4
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -30,6 +29,8 @@ set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
+set_property ip_repo_paths c:/Users/utkar/fpga-based-packet-processing-unit/ips/ecemptcamip_1.0 [current_project]
+update_ip_catalog
 set_property ip_output_repo c:/Users/utkar/majorproject/majorproject.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib C:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/hdl/mbdesign_wrapper.v
@@ -70,6 +71,7 @@ set_property used_in_implementation false [get_files -all c:/Users/utkar/majorpr
 set_property used_in_implementation false [get_files -all c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_axi_ethernetlite_0_0/mbdesign_axi_ethernetlite_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_axi_timer_0_0/mbdesign_axi_timer_0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_axi_timer_0_0/mbdesign_axi_timer_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_axi_smc_0/ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_axi_smc_0/bd_0/ip/ip_1/bd_226e_psr0_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_axi_smc_0/bd_0/ip/ip_1/bd_226e_psr0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_axi_smc_0/bd_0/ip/ip_2/bd_226e_psr_aclk_0_board.xdc]
@@ -96,7 +98,6 @@ set_property used_in_implementation false [get_files -all c:/Users/utkar/majorpr
 set_property used_in_implementation false [get_files -all c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_axi_smc_0/bd_0/ip/ip_27/bd_226e_m00awn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_axi_smc_0/bd_0/ip/ip_28/bd_226e_m00wn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_axi_smc_0/bd_0/ip/ip_29/bd_226e_m00bn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_axi_smc_0/ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_rst_mig_7series_0_81M_0/mbdesign_rst_mig_7series_0_81M_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_rst_mig_7series_0_81M_0/mbdesign_rst_mig_7series_0_81M_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_rst_mig_7series_0_81M_0/mbdesign_rst_mig_7series_0_81M_0_ooc.xdc]

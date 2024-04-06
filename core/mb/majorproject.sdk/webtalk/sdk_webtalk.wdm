@@ -20,39 +20,21 @@ clients =
 	{ client_name = "sdk"; 
 		rules = (
 			{
-				context="sdk\\\\hardware/1708941980277";
-				xml_map="sdk\\\\hardware/1708941980277";
-				html_map="sdk\\\\hardware/1708941980277";
+				context="sdk\\\\bsp/1712424375107";
+				xml_map="sdk\\\\bsp/1712424375107";
+				html_map="sdk\\\\bsp/1712424375107";
 				html_format="UnisimStatsStyle";
 			},
 			{
-				context="sdk\\\\bsp/1708941997331";
-				xml_map="sdk\\\\bsp/1708941997331";
-				html_map="sdk\\\\bsp/1708941997331";
+				context="sdk\\\\application/1712424376731";
+				xml_map="sdk\\\\application/1712424376731";
+				html_map="sdk\\\\application/1712424376731";
 				html_format="UnisimStatsStyle";
 			},
 			{
-				context="sdk\\\\application/1708941999921";
-				xml_map="sdk\\\\application/1708941999921";
-				html_map="sdk\\\\application/1708941999921";
-				html_format="UnisimStatsStyle";
-			},
-			{
-				context="sdk\\\\bsp/1708964384210";
-				xml_map="sdk\\\\bsp/1708964384210";
-				html_map="sdk\\\\bsp/1708964384210";
-				html_format="UnisimStatsStyle";
-			},
-			{
-				context="sdk\\\\application/1708964386037";
-				xml_map="sdk\\\\application/1708964386037";
-				html_map="sdk\\\\application/1708964386037";
-				html_format="UnisimStatsStyle";
-			},
-			{
-				context="sdk\\\\bsp/1708984132802";
-				xml_map="sdk\\\\bsp/1708984132802";
-				html_map="sdk\\\\bsp/1708984132802";
+				context="sdk\\\\bsp/1712445528254";
+				xml_map="sdk\\\\bsp/1712445528254";
+				html_map="sdk\\\\bsp/1712445528254";
 				html_format="UnisimStatsStyle";
 			}
 		);
