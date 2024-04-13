@@ -1,0 +1,22 @@
+13:23:22 **** Auto Build of configuration Debug for project uartmpinterrupt ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../uartmpinterrupt_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'SetupInterruptSystem':
+../src/helloworld.c:38:33: error: 'XPAR_INTC_0_UARTLITE_0_VEC_ID' undeclared (first use in this function); did you mean 'XPAR_INTC_0_EMACLITE_0_VEC_ID'?
+ #define UARTLITE_INT_IRQ_ID     XPAR_INTC_0_UARTLITE_0_VEC_ID
+                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:143:47: note: in expansion of macro 'UARTLITE_INT_IRQ_ID'
+  Status = XIntc_Connect(&InterruptController, UARTLITE_INT_IRQ_ID,
+                                               ^~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:38:33: note: each undeclared identifier is reported only once for each function it appears in
+ #define UARTLITE_INT_IRQ_ID     XPAR_INTC_0_UARTLITE_0_VEC_ID
+                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:143:47: note: in expansion of macro 'UARTLITE_INT_IRQ_ID'
+  Status = XIntc_Connect(&InterruptController, UARTLITE_INT_IRQ_ID,
+                                               ^~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+
+13:23:22 Build Finished (took 163ms)
+

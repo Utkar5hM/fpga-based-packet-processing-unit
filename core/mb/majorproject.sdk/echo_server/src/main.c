@@ -50,6 +50,7 @@
 #include "xemaclite.h"
 #include "xil_io.h"
 #include "xil_printf.h"
+#include "xuartlite.h"
 
 /************************** Constant Definitions *****************************/
 
@@ -123,6 +124,8 @@
 					frame */
 #define ICMP_DATA_FIELD_LEN 	20 /* Data field length */
 
+
+
 /**************************** Type Definitions *******************************/
 
 /***************** Macros (Inline Functions) Definitions *********************/
@@ -190,26 +193,30 @@ u32 NumOfPingReplies;
 * @note		None.
 *
 *****************************************************************************/
+
+#define XUARTLITE_BASEADDRESS	XPAR_AXI_UARTLITE_0_BASEADDR
+XUartLite UartLite;	
+
+
 int main()
 {
 	int Status;
-
 	/*
 	 * Run the EmacLite Ping reply example.
 	 */
 
-	xil_printf("starting Emaclite ping reply Example\r\n");
+	// xil_printf("starting Emaclite ping reply Example\r\n");
 #ifdef SDT
 	Status = EmacLitePingReplyExample(EMACLITE_BASEADDR);
 #else
 	Status = EmacLitePingReplyExample(EMAC_DEVICE_ID);
 #endif
 	if (Status != XST_SUCCESS) {
-		xil_printf("Emaclite Frame reader\r\n");
+		// xil_printf("Emaclite Frame reader\r\n");
 		return XST_FAILURE;
 	}
 
-	xil_printf("Successfully ran Emaclite ping reply Example\r\n");
+	// xil_printf("Successfully ran Emaclite ping reply Example\r\n");
 	return XST_SUCCESS;
 }
 
@@ -280,9 +287,22 @@ int EmacLitePingReplyExample(u16 DeviceId)
 		/*
 		 * Process the Receive frame.
 		 */
+		u8 RxFrameWithNewline[RecvFrameLength + 1];
+		memcpy(RxFrameWithNewline, RxFrame, RecvFrameLength);
+		RxFrameWithNewline[RecvFrameLength] = '\n';
+		u32 totalBytesSent = 0;
+		while (totalBytesSent < RecvFrameLength +1) {
+			u32 bytesSent = XUartLite_Send(&UartLite, (u8*)RxFrameWithNewline + totalBytesSent, RecvFrameLength + 1 - totalBytesSent);
+			totalBytesSent += bytesSent;
+		}
+		// u32 BytesSent = XUartLite_Send(&UartLite, (u8*)RxFrame, RecvFrameLength);
+		// if (BytesSent!=RecvFrameLength) {
+		// 	xil_printf("Failed to send the frame to UART\r\n");
+		// }
 
-		xil_printf("Received a frame\r\n");
-		ProcessRecvFrame(EmacLiteInstPtr);
+		// xil_printf("BytesSent: %lu\r\n", BytesSent);
+		// xil_printf("Received a frame of size: %lu\r\n", RecvFrameLength);
+		// ProcessRecvFrame(EmacLiteInstPtr);
 		RecvFrameLength = 0;
 
 		/*
@@ -345,14 +365,14 @@ static void ProcessRecvFrame(XEmacLite *InstancePtr)
 			break;
 		}
 	}
-	if(PacketType==BROADCAST_PACKET)
-		xil_printf("Packet Type: BROADCAST_PACKET\r\n");
-	else if (PacketType==MAC_MATCHED_PACKET)
-		xil_printf("Packet Type: DESTINATION_MAC_ADDRESS_MATCHES_FPGA\r\n");
-	else xil_printf("Packet Type: OTHER\r\n");
+	// if(PacketType==BROADCAST_PACKET)
+	// 	xil_printf("Packet Type: BROADCAST_PACKET\r\n");
+	// else if (PacketType==MAC_MATCHED_PACKET)
+	// 	xil_printf("Packet Type: DESTINATION_MAC_ADDRESS_MATCHES_FPGA\r\n");
+	// else xil_printf("Packet Type: OTHER\r\n");
 
 
-	PrintSourceMAC(RxFramePtr);
+	// PrintSourceMAC(RxFramePtr);
 	/*
 	 * Process broadcast packet.
 	 */
@@ -501,28 +521,30 @@ static void ProcessRecvFrame(XEmacLite *InstancePtr)
 	 * Process packets whose MAC address is matched.
 	 */
 	if (PacketType == MAC_MATCHED_PACKET) {
-		xil_printf("EtherType: %d", Xil_Ntohs(*(RxFramePtr + ETHER_PROTO_TYPE_LOC)));
+		// xil_printf("EtherType: 0x%X\r\n", Xil_Ntohs(*(RxFramePtr + ETHER_PROTO_TYPE_LOC)));
 		/*
 		 * Check ICMP packet.
 		 */
 		if (Xil_Ntohs(*(RxFramePtr + ETHER_PROTO_TYPE_LOC)) ==
 		    XEL_ETHER_PROTO_TYPE_IP) {
-
+			// xil_printf("Packet Type: TCP packet\r\n");
 			/*
 			 * Check the IP header checksum.
 			 */
 			CheckSum = CheckSumCalculation(RxFramePtr,
 						       IP_HDR_START_LOC,
 						       IP_HDR_LEN);
+			// xil_printf("IP Header Checksum Results: 0x%X\r\n", CheckSum);
 
 			/*
 			 * Check the Data field checksum.
 			 */
-			if (CheckSum == CORRECT_CKSUM_VALUE) {
+			if (CheckSum == CORRECT_CKSUM_VALUE || 1) {
 				CheckSum = CheckSumCalculation(RxFramePtr,
 							       ICMP_DATA_START_LOC,
 							       ICMP_DATA_FIELD_LEN);
-				if (CheckSum == CORRECT_CKSUM_VALUE) {
+				// xil_printf("Data field Checksum Results: 0x%X\r\n", CheckSum);
+				if (TRUE || CheckSum == CORRECT_CKSUM_VALUE) {
 
 					/*
 					 * Add destination address
@@ -562,7 +584,6 @@ static void ProcessRecvFrame(XEmacLite *InstancePtr)
 							*(RxFramePtr + Index);
 						Index++;
 					}
-
 					/*
 					 * Identification field a random number
 					 * which is set to IDENT_FIELD_VALUE.
@@ -737,3 +758,4 @@ static u16 CheckSumCalculation(u16 *RxFramePtr, int StartLoc, int Length)
 	CheckSum = Sum + CheckSum;
 	return CheckSum;
 }
+

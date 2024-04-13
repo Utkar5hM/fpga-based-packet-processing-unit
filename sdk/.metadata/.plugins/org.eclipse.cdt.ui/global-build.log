@@ -1,0 +1,1611 @@
+15:44:03 **** Clean-only build of configuration Debug for project echo_server ****
+make clean 
+rm -rf ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o ./src/echo.d ./src/i2c_access.d ./src/iic_phyreset.d ./src/main.d ./src/platform.d ./src/platform_mb.d ./src/platform_ppc.d ./src/platform_zynq.d ./src/platform_zynqmp.d ./src/sfp.d ./src/si5324.d ./src/xemaclite_example_util.d echo_server.elf.size  echo_server.elf
+ 
+15:44:03 **** Clean-only build of project echo_server_bsp ****
+make -k clean 
+make -C microblaze_0/libsrc/bram_v4_3/src -s clean 
+make -C microblaze_0/libsrc/cpu_v2_9/src -s clean 
+make -C microblaze_0/libsrc/ecemptcamip_v1_0/src -s clean 
+make -C microblaze_0/libsrc/emaclite_v4_4/src -s clean 
+make -C microblaze_0/libsrc/intc_v3_9/src -s clean 
+make -C microblaze_0/libsrc/lwip211_v1_0/src -s clean 
+make -C microblaze_0/libsrc/standalone_v7_0/src -s clean 
+make -C microblaze_0/libsrc/tmrctr_v4_5/src -s clean 
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s clean 
+rm -f microblaze_0/lib/libxil.a
+15:44:03 **** Build of project echo_server_bsp ****
+make -k all 
+Running Make include in microblaze_0/libsrc/bram_v4_3/src
+make -C microblaze_0/libsrc/bram_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/cpu_v2_9/src
+make -C microblaze_0/libsrc/cpu_v2_9/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/ecemptcamip_v1_0/src
+make -C microblaze_0/libsrc/ecemptcamip_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/emaclite_v4_4/src
+make -C microblaze_0/libsrc/emaclite_v4_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/intc_v3_9/src
+make -C microblaze_0/libsrc/intc_v3_9/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/lwip211_v1_0/src
+make -C microblaze_0/libsrc/lwip211_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/standalone_v7_0/src
+make -C microblaze_0/libsrc/standalone_v7_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/tmrctr_v4_5/src
+make -C microblaze_0/libsrc/tmrctr_v4_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/uartlite_v3_2/src
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make libs in microblaze_0/libsrc/bram_v4_3/src
+make -C microblaze_0/libsrc/bram_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling bram
+mb-ar: creating ../../../lib/libxil.a
+Running Make libs in microblaze_0/libsrc/cpu_v2_9/src
+make -C microblaze_0/libsrc/cpu_v2_9/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling cpu
+Running Make libs in microblaze_0/libsrc/ecemptcamip_v1_0/src
+make -C microblaze_0/libsrc/ecemptcamip_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling ecemptcamip...
+ecemptcamip_selftest.c: In function 'ECEMPTCAMIP_Reg_SelfTest':
+ecemptcamip_selftest.c:52:60: warning: comparison of integer expressions of different signedness: 'u32' {aka 'long unsigned int'} and 'int' [-Wsign-compare]
+    if ( ECEMPTCAMIP_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                            ^~
+ecemptcamip_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+Running Make libs in microblaze_0/libsrc/emaclite_v4_4/src
+make -C microblaze_0/libsrc/emaclite_v4_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling emaclite
+Running Make libs in microblaze_0/libsrc/intc_v3_9/src
+make -C microblaze_0/libsrc/intc_v3_9/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling intc
+Running Make libs in microblaze_0/libsrc/lwip211_v1_0/src
+make -C microblaze_0/libsrc/lwip211_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling lwip src and adapter files
+contrib/ports/xilinx/netif/xadapter.c: In function 'eth_link_detect':
+contrib/ports/xilinx/netif/xadapter.c:364:8: warning: unused variable 'link_speed' [-Wunused-variable]
+  u32_t link_speed, phy_link_status;
+        ^~~~~~~~~~
+Running Make libs in microblaze_0/libsrc/standalone_v7_0/src
+make -C microblaze_0/libsrc/standalone_v7_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling standalone
+microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+Running Make libs in microblaze_0/libsrc/tmrctr_v4_5/src
+make -C microblaze_0/libsrc/tmrctr_v4_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling tmrctr
+Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling uartlite
+Finished building libraries
+15:44:07 **** Build of configuration Debug for project echo_server ****
+make all 
+Building file: ../src/echo.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
+Finished building: ../src/echo.c
+ 
+Building file: ../src/i2c_access.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_access.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/i2c_access.d" -MT"src/i2c_access.o" -o "src/i2c_access.o" "../src/i2c_access.c"
+Finished building: ../src/i2c_access.c
+ 
+Building file: ../src/iic_phyreset.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_phyreset.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/iic_phyreset.d" -MT"src/iic_phyreset.o" -o "src/iic_phyreset.o" "../src/iic_phyreset.c"
+Finished building: ../src/iic_phyreset.c
+ 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:319:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building file: ../src/platform_mb.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_mb.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform_mb.d" -MT"src/platform_mb.o" -o "src/platform_mb.o" "../src/platform_mb.c"
+Finished building: ../src/platform_mb.c
+ 
+Building file: ../src/platform_ppc.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_ppc.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform_ppc.d" -MT"src/platform_ppc.o" -o "src/platform_ppc.o" "../src/platform_ppc.c"
+Finished building: ../src/platform_ppc.c
+ 
+Building file: ../src/platform_zynq.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_zynq.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform_zynq.d" -MT"src/platform_zynq.o" -o "src/platform_zynq.o" "../src/platform_zynq.c"
+Finished building: ../src/platform_zynq.c
+ 
+Building file: ../src/platform_zynqmp.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_zynqmp.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform_zynqmp.d" -MT"src/platform_zynqmp.o" -o "src/platform_zynqmp.o" "../src/platform_zynqmp.c"
+Finished building: ../src/platform_zynqmp.c
+ 
+Building file: ../src/sfp.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sfp.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/sfp.d" -MT"src/sfp.o" -o "src/sfp.o" "../src/sfp.c"
+Finished building: ../src/sfp.c
+ 
+Building file: ../src/si5324.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/si5324.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/si5324.d" -MT"src/si5324.o" -o "src/si5324.o" "../src/si5324.c"
+Finished building: ../src/si5324.c
+ 
+Building file: ../src/xemaclite_example_util.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemaclite_example_util.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xemaclite_example_util.d" -MT"src/xemaclite_example_util.o" -o "src/xemaclite_example_util.o" "../src/xemaclite_example_util.c"
+Finished building: ../src/xemaclite_example_util.c
+ 
+Building target: echo_server.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf" ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: echo_server.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23408	   1752	  85112	 110272	  1aec0	echo_server.elf
+Finished building: echo_server.elf.size
+ 
+15:44:48 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:319:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: echo_server.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf" ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: echo_server.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23356	   1752	  85116	 110224	  1ae90	echo_server.elf
+Finished building: echo_server.elf.size
+ 
+16:16:47 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:319:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+At top level:
+../src/main.c:313:13: warning: 'ProcessRecvFrame' defined but not used [-Wunused-function]
+ static void ProcessRecvFrame(XEmacLite *InstancePtr)
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: echo_server.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf" ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: echo_server.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19756	   1748	  83600	 105104	  19a90	echo_server.elf
+Finished building: echo_server.elf.size
+ 
+16:17:52 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:319:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: echo_server.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf" ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: echo_server.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23380	   1752	  85116	 110248	  1aea8	echo_server.elf
+Finished building: echo_server.elf.size
+ 
+16:29:07 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:319:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: echo_server.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf" ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: echo_server.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23208	   1752	  85112	 110072	  1adf8	echo_server.elf
+Finished building: echo_server.elf.size
+ 
+16:29:12 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+make: Nothing to be done for 'all'.
+16:29:42 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+make: Nothing to be done for 'all'.
+16:35:14 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:202:3: error: 'Status' undeclared (first use in this function); did you mean 'XStatus'?
+   Status = UartLitePolledExample(UARTLITE_DEVICE_ID);
+   ^~~~~~
+   XStatus
+../src/main.c:202:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:202:12: warning: implicit declaration of function 'UartLitePolledExample'; did you mean 'EmacLitePingReplyExample'? [-Wimplicit-function-declaration]
+   Status = UartLitePolledExample(UARTLITE_DEVICE_ID);
+            ^~~~~~~~~~~~~~~~~~~~~
+            EmacLitePingReplyExample
+../src/main.c:202:34: error: 'UARTLITE_DEVICE_ID' undeclared (first use in this function); did you mean 'XPAR_UARTLITE_0_DEVICE_ID'?
+   Status = UartLitePolledExample(UARTLITE_DEVICE_ID);
+                                  ^~~~~~~~~~~~~~~~~~
+                                  XPAR_UARTLITE_0_DEVICE_ID
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:338:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:56: src/main.o] Error 1
+16:36:43 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:202:3: error: 'Status' undeclared (first use in this function); did you mean 'XStatus'?
+   Status = UartLitePolledExample(UARTLITE_DEVICE_ID);
+   ^~~~~~
+   XStatus
+../src/main.c:202:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:338:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:59: src/main.o] Error 1
+16:37:44 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:202:3: error: 'Status' undeclared (first use in this function); did you mean 'XStatus'?
+   Status = UartLitePolledExample(UARTLITE_DEVICE_ID);
+   ^~~~~~
+   XStatus
+../src/main.c:202:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:338:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:59: src/main.o] Error 1
+16:38:01 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:338:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building file: ../src/mpuart.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mpuart.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpuart.d" -MT"src/mpuart.o" -o "src/mpuart.o" "../src/mpuart.c"
+Finished building: ../src/mpuart.c
+ 
+Building target: echo_server.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf" ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/mpuart.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: echo_server.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19400	   1744	  82136	 103280	  19370	echo_server.elf
+Finished building: echo_server.elf.size
+ 
+16:38:07 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+make: Nothing to be done for 'all'.
+16:38:24 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+make: Nothing to be done for 'all'.
+16:42:17 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:195:31: error: 'XPAR_XUARTLITE_0_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_UARTLITE_0_BASEADDR'?
+ #define XUARTLITE_BASEADDRESS XPAR_XUARTLITE_0_BASEADDR
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:202:34: note: in expansion of macro 'XUARTLITE_BASEADDRESS'
+  XUartLite_Initialize(&UartLite, XUARTLITE_BASEADDRESS);
+                                  ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c:195:31: note: each undeclared identifier is reported only once for each function it appears in
+ #define XUARTLITE_BASEADDRESS XPAR_XUARTLITE_0_BASEADDR
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:202:34: note: in expansion of macro 'XUARTLITE_BASEADDRESS'
+  XUartLite_Initialize(&UartLite, XUARTLITE_BASEADDRESS);
+                                  ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:326:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:59: src/main.o] Error 1
+16:43:16 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:48:
+../src/main.c: In function 'main':
+../../echo_server_bsp/microblaze_0/include/xparameters.h:698:38: warning: unsigned conversion from 'int' to 'u16' {aka 'short unsigned int'} changes value from '1080033280' to '0' [-Woverflow]
+ #define XPAR_AXI_UARTLITE_0_BASEADDR 0x40600000
+                                      ^~~~~~~~~~
+../src/main.c:195:31: note: in expansion of macro 'XPAR_AXI_UARTLITE_0_BASEADDR'
+ #define XUARTLITE_BASEADDRESS XPAR_AXI_UARTLITE_0_BASEADDR
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:202:34: note: in expansion of macro 'XUARTLITE_BASEADDRESS'
+  XUartLite_Initialize(&UartLite, XUARTLITE_BASEADDRESS);
+                                  ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:326:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: echo_server.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf" ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/mpuart.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: echo_server.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23804	   1768	  85188	 110760	  1b0a8	echo_server.elf
+Finished building: echo_server.elf.size
+ 
+16:43:36 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+make: Nothing to be done for 'all'.
+16:45:33 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:48:
+../src/main.c: In function 'main':
+../../echo_server_bsp/microblaze_0/include/xparameters.h:698:38: warning: unsigned conversion from 'int' to 'u16' {aka 'short unsigned int'} changes value from '1080033280' to '0' [-Woverflow]
+ #define XPAR_AXI_UARTLITE_0_BASEADDR 0x40600000
+                                      ^~~~~~~~~~
+../src/main.c:195:31: note: in expansion of macro 'XPAR_AXI_UARTLITE_0_BASEADDR'
+ #define XUARTLITE_BASEADDRESS XPAR_AXI_UARTLITE_0_BASEADDR
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:202:34: note: in expansion of macro 'XUARTLITE_BASEADDRESS'
+  XUartLite_Initialize(&UartLite, XUARTLITE_BASEADDRESS);
+                                  ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:329:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: echo_server.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf" ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/mpuart.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: echo_server.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24368	   1768	  85184	 111320	  1b2d8	echo_server.elf
+Finished building: echo_server.elf.size
+ 
+16:45:47 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+make: Nothing to be done for 'all'.
+16:49:14 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:48:
+../src/main.c: In function 'main':
+../../echo_server_bsp/microblaze_0/include/xparameters.h:698:38: warning: unsigned conversion from 'int' to 'u16' {aka 'short unsigned int'} changes value from '1080033280' to '0' [-Woverflow]
+ #define XPAR_AXI_UARTLITE_0_BASEADDR 0x40600000
+                                      ^~~~~~~~~~
+../src/main.c:195:31: note: in expansion of macro 'XPAR_AXI_UARTLITE_0_BASEADDR'
+ #define XUARTLITE_BASEADDRESS XPAR_AXI_UARTLITE_0_BASEADDR
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:202:34: note: in expansion of macro 'XUARTLITE_BASEADDRESS'
+  XUartLite_Initialize(&UartLite, XUARTLITE_BASEADDRESS);
+                                  ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:326:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: echo_server.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf" ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/mpuart.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: echo_server.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24328	   1768	  85184	 111280	  1b2b0	echo_server.elf
+Finished building: echo_server.elf.size
+ 
+16:49:50 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:48:
+../src/main.c: In function 'main':
+../../echo_server_bsp/microblaze_0/include/xparameters.h:698:38: warning: unsigned conversion from 'int' to 'u16' {aka 'short unsigned int'} changes value from '1080033280' to '0' [-Woverflow]
+ #define XPAR_AXI_UARTLITE_0_BASEADDR 0x40600000
+                                      ^~~~~~~~~~
+../src/main.c:195:31: note: in expansion of macro 'XPAR_AXI_UARTLITE_0_BASEADDR'
+ #define XUARTLITE_BASEADDRESS XPAR_AXI_UARTLITE_0_BASEADDR
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:202:34: note: in expansion of macro 'XUARTLITE_BASEADDRESS'
+  XUartLite_Initialize(&UartLite, XUARTLITE_BASEADDRESS);
+                                  ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:326:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: echo_server.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf" ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/mpuart.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: echo_server.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24328	   1768	  85184	 111280	  1b2b0	echo_server.elf
+Finished building: echo_server.elf.size
+ 
+16:53:56 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+make: Nothing to be done for 'all'.
+16:57:27 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:48:
+../src/main.c: In function 'main':
+../../echo_server_bsp/microblaze_0/include/xparameters.h:698:38: warning: unsigned conversion from 'int' to 'u16' {aka 'short unsigned int'} changes value from '1080033280' to '0' [-Woverflow]
+ #define XPAR_AXI_UARTLITE_0_BASEADDR 0x40600000
+                                      ^~~~~~~~~~
+../src/main.c:195:31: note: in expansion of macro 'XPAR_AXI_UARTLITE_0_BASEADDR'
+ #define XUARTLITE_BASEADDRESS XPAR_AXI_UARTLITE_0_BASEADDR
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:202:34: note: in expansion of macro 'XUARTLITE_BASEADDRESS'
+  XUartLite_Initialize(&UartLite, XUARTLITE_BASEADDRESS);
+                                  ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:326:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+At top level:
+../src/main.c:686:6: warning: 'PrintSourceMAC' defined but not used [-Wunused-function]
+ void PrintSourceMAC(u16 *RxFramePtr) {
+      ^~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: echo_server.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf" ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/mpuart.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: echo_server.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17964	   1404	  85192	 104560	  19870	echo_server.elf
+Finished building: echo_server.elf.size
+ 
+16:58:20 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:48:
+../src/main.c: In function 'main':
+../../echo_server_bsp/microblaze_0/include/xparameters.h:698:38: warning: unsigned conversion from 'int' to 'u16' {aka 'short unsigned int'} changes value from '1080033280' to '0' [-Woverflow]
+ #define XPAR_AXI_UARTLITE_0_BASEADDR 0x40600000
+                                      ^~~~~~~~~~
+../src/main.c:195:31: note: in expansion of macro 'XPAR_AXI_UARTLITE_0_BASEADDR'
+ #define XUARTLITE_BASEADDRESS XPAR_AXI_UARTLITE_0_BASEADDR
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:202:34: note: in expansion of macro 'XUARTLITE_BASEADDRESS'
+  XUartLite_Initialize(&UartLite, XUARTLITE_BASEADDRESS);
+                                  ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:326:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+At top level:
+../src/main.c:686:6: warning: 'PrintSourceMAC' defined but not used [-Wunused-function]
+ void PrintSourceMAC(u16 *RxFramePtr) {
+      ^~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: echo_server.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf" ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/mpuart.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: echo_server.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18488	   1404	  85188	 105080	  19a78	echo_server.elf
+Finished building: echo_server.elf.size
+ 
+16:59:14 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:48:
+../src/main.c: In function 'main':
+../../echo_server_bsp/microblaze_0/include/xparameters.h:698:38: warning: unsigned conversion from 'int' to 'u16' {aka 'short unsigned int'} changes value from '1080033280' to '0' [-Woverflow]
+ #define XPAR_AXI_UARTLITE_0_BASEADDR 0x40600000
+                                      ^~~~~~~~~~
+../src/main.c:195:31: note: in expansion of macro 'XPAR_AXI_UARTLITE_0_BASEADDR'
+ #define XUARTLITE_BASEADDRESS XPAR_AXI_UARTLITE_0_BASEADDR
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:202:34: note: in expansion of macro 'XUARTLITE_BASEADDRESS'
+  XUartLite_Initialize(&UartLite, XUARTLITE_BASEADDRESS);
+                                  ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:326:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+At top level:
+../src/main.c:686:6: warning: 'PrintSourceMAC' defined but not used [-Wunused-function]
+ void PrintSourceMAC(u16 *RxFramePtr) {
+      ^~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: echo_server.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf" ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/mpuart.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: echo_server.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23524	   1768	  85188	 110480	  1af90	echo_server.elf
+Finished building: echo_server.elf.size
+ 
+17:00:33 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:48:
+../src/main.c: In function 'main':
+../../echo_server_bsp/microblaze_0/include/xparameters.h:698:38: warning: unsigned conversion from 'int' to 'u16' {aka 'short unsigned int'} changes value from '1080033280' to '0' [-Woverflow]
+ #define XPAR_AXI_UARTLITE_0_BASEADDR 0x40600000
+                                      ^~~~~~~~~~
+../src/main.c:195:31: note: in expansion of macro 'XPAR_AXI_UARTLITE_0_BASEADDR'
+ #define XUARTLITE_BASEADDRESS XPAR_AXI_UARTLITE_0_BASEADDR
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:202:34: note: in expansion of macro 'XUARTLITE_BASEADDRESS'
+  XUartLite_Initialize(&UartLite, XUARTLITE_BASEADDRESS);
+                                  ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c: In function 'EmacLitePingReplyExample':
+../src/main.c:289:7: warning: unused variable 'BytesSent' [-Wunused-variable]
+   u32 BytesSent = XUartLite_Send(&UartLite, (u8*)RxFrame, RecvFrameLength);
+       ^~~~~~~~~
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:326:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+At top level:
+../src/main.c:686:6: warning: 'PrintSourceMAC' defined but not used [-Wunused-function]
+ void PrintSourceMAC(u16 *RxFramePtr) {
+      ^~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: echo_server.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf" ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/mpuart.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: echo_server.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18492	   1404	  85192	 105088	  19a80	echo_server.elf
+Finished building: echo_server.elf.size
+ 
+17:02:23 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:48:
+../src/main.c: In function 'main':
+../../echo_server_bsp/microblaze_0/include/xparameters.h:698:38: warning: unsigned conversion from 'int' to 'u16' {aka 'short unsigned int'} changes value from '1080033280' to '0' [-Woverflow]
+ #define XPAR_AXI_UARTLITE_0_BASEADDR 0x40600000
+                                      ^~~~~~~~~~
+../src/main.c:195:31: note: in expansion of macro 'XPAR_AXI_UARTLITE_0_BASEADDR'
+ #define XUARTLITE_BASEADDRESS XPAR_AXI_UARTLITE_0_BASEADDR
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:202:34: note: in expansion of macro 'XUARTLITE_BASEADDRESS'
+  XUartLite_Initialize(&UartLite, XUARTLITE_BASEADDRESS);
+                                  ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c: In function 'EmacLitePingReplyExample':
+../src/main.c:293:7: warning: unused variable 'BytesSent' [-Wunused-variable]
+   u32 BytesSent = XUartLite_Send(&UartLite, RxFrameWithNewline, RecvFrameLength + 1);
+       ^~~~~~~~~
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:331:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+At top level:
+../src/main.c:691:6: warning: 'PrintSourceMAC' defined but not used [-Wunused-function]
+ void PrintSourceMAC(u16 *RxFramePtr) {
+      ^~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: echo_server.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf" ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/mpuart.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: echo_server.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19480	   1404	  85188	 106072	  19e58	echo_server.elf
+Finished building: echo_server.elf.size
+ 
+17:03:02 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+make: Nothing to be done for 'all'.
+17:03:42 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:48:
+../src/main.c: In function 'main':
+../../echo_server_bsp/microblaze_0/include/xparameters.h:698:38: warning: unsigned conversion from 'int' to 'u16' {aka 'short unsigned int'} changes value from '1080033280' to '0' [-Woverflow]
+ #define XPAR_AXI_UARTLITE_0_BASEADDR 0x40600000
+                                      ^~~~~~~~~~
+../src/main.c:195:31: note: in expansion of macro 'XPAR_AXI_UARTLITE_0_BASEADDR'
+ #define XUARTLITE_BASEADDRESS XPAR_AXI_UARTLITE_0_BASEADDR
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:202:34: note: in expansion of macro 'XUARTLITE_BASEADDRESS'
+  XUartLite_Initialize(&UartLite, XUARTLITE_BASEADDRESS);
+                                  ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c: In function 'EmacLitePingReplyExample':
+../src/main.c:293:7: warning: unused variable 'BytesSent' [-Wunused-variable]
+   u32 BytesSent = XUartLite_Send(&UartLite, RxFrameWithNewline, RecvFrameLength + 1);
+       ^~~~~~~~~
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:331:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+At top level:
+../src/main.c:691:6: warning: 'PrintSourceMAC' defined but not used [-Wunused-function]
+ void PrintSourceMAC(u16 *RxFramePtr) {
+      ^~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: echo_server.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf" ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/mpuart.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: echo_server.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19484	   1404	  85192	 106080	  19e60	echo_server.elf
+Finished building: echo_server.elf.size
+ 
+17:04:26 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:48:
+../src/main.c: In function 'main':
+../../echo_server_bsp/microblaze_0/include/xparameters.h:698:38: warning: unsigned conversion from 'int' to 'u16' {aka 'short unsigned int'} changes value from '1080033280' to '0' [-Woverflow]
+ #define XPAR_AXI_UARTLITE_0_BASEADDR 0x40600000
+                                      ^~~~~~~~~~
+../src/main.c:195:31: note: in expansion of macro 'XPAR_AXI_UARTLITE_0_BASEADDR'
+ #define XUARTLITE_BASEADDRESS XPAR_AXI_UARTLITE_0_BASEADDR
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:202:34: note: in expansion of macro 'XUARTLITE_BASEADDRESS'
+  XUartLite_Initialize(&UartLite, XUARTLITE_BASEADDRESS);
+                                  ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:331:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+At top level:
+../src/main.c:691:6: warning: 'PrintSourceMAC' defined but not used [-Wunused-function]
+ void PrintSourceMAC(u16 *RxFramePtr) {
+      ^~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: echo_server.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf" ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/mpuart.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: echo_server.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24516	   1768	  85188	 111472	  1b370	echo_server.elf
+Finished building: echo_server.elf.size
+ 
+17:09:06 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:48:
+../src/main.c: In function 'main':
+../../echo_server_bsp/microblaze_0/include/xparameters.h:698:38: warning: unsigned conversion from 'int' to 'u16' {aka 'short unsigned int'} changes value from '1080033280' to '0' [-Woverflow]
+ #define XPAR_AXI_UARTLITE_0_BASEADDR 0x40600000
+                                      ^~~~~~~~~~
+../src/main.c:195:31: note: in expansion of macro 'XPAR_AXI_UARTLITE_0_BASEADDR'
+ #define XUARTLITE_BASEADDRESS XPAR_AXI_UARTLITE_0_BASEADDR
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:202:34: note: in expansion of macro 'XUARTLITE_BASEADDRESS'
+  XUartLite_Initialize(&UartLite, XUARTLITE_BASEADDRESS);
+                                  ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c: In function 'EmacLitePingReplyExample':
+../src/main.c:294:7: warning: unused variable 'BytesSent' [-Wunused-variable]
+   u32 BytesSent = XUartLite_Send(&UartLite, (u8*)RxFrame, RecvFrameLength);
+       ^~~~~~~~~
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:331:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+At top level:
+../src/main.c:691:6: warning: 'PrintSourceMAC' defined but not used [-Wunused-function]
+ void PrintSourceMAC(u16 *RxFramePtr) {
+      ^~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: echo_server.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf" ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/mpuart.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: echo_server.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18492	   1404	  85192	 105088	  19a80	echo_server.elf
+Finished building: echo_server.elf.size
+ 
+17:09:14 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+make: Nothing to be done for 'all'.
+17:14:12 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:48:
+../src/main.c: In function 'main':
+../../echo_server_bsp/microblaze_0/include/xparameters.h:698:38: warning: unsigned conversion from 'int' to 'u16' {aka 'short unsigned int'} changes value from '1080033280' to '0' [-Woverflow]
+ #define XPAR_AXI_UARTLITE_0_BASEADDR 0x40600000
+                                      ^~~~~~~~~~
+../src/main.c:195:31: note: in expansion of macro 'XPAR_AXI_UARTLITE_0_BASEADDR'
+ #define XUARTLITE_BASEADDRESS XPAR_AXI_UARTLITE_0_BASEADDR
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:202:34: note: in expansion of macro 'XUARTLITE_BASEADDRESS'
+  XUartLite_Initialize(&UartLite, XUARTLITE_BASEADDRESS);
+                                  ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c: In function 'EmacLitePingReplyExample':
+../src/main.c:295:7: warning: unused variable 'BytesSent' [-Wunused-variable]
+   u32 BytesSent = XUartLite_Send(&UartLite, (u8*)RxFrame, RecvFrameLength);
+       ^~~~~~~~~
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:333:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+At top level:
+../src/main.c:693:6: warning: 'PrintSourceMAC' defined but not used [-Wunused-function]
+ void PrintSourceMAC(u16 *RxFramePtr) {
+      ^~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: echo_server.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf" ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/mpuart.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: echo_server.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23532	   1768	  85188	 110488	  1af98	echo_server.elf
+Finished building: echo_server.elf.size
+ 
+17:15:34 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:48:
+../src/main.c: In function 'main':
+../../echo_server_bsp/microblaze_0/include/xparameters.h:698:38: warning: unsigned conversion from 'int' to 'u16' {aka 'short unsigned int'} changes value from '1080033280' to '0' [-Woverflow]
+ #define XPAR_AXI_UARTLITE_0_BASEADDR 0x40600000
+                                      ^~~~~~~~~~
+../src/main.c:195:31: note: in expansion of macro 'XPAR_AXI_UARTLITE_0_BASEADDR'
+ #define XUARTLITE_BASEADDRESS XPAR_AXI_UARTLITE_0_BASEADDR
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:202:34: note: in expansion of macro 'XUARTLITE_BASEADDRESS'
+  XUartLite_Initialize(&UartLite, XUARTLITE_BASEADDRESS);
+                                  ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:334:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+At top level:
+../src/main.c:694:6: warning: 'PrintSourceMAC' defined but not used [-Wunused-function]
+ void PrintSourceMAC(u16 *RxFramePtr) {
+      ^~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: echo_server.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf" ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/mpuart.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: echo_server.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23556	   1768	  85188	 110512	  1afb0	echo_server.elf
+Finished building: echo_server.elf.size
+ 
+17:15:58 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+make: Nothing to be done for 'all'.
+17:17:08 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:48:
+../src/main.c: In function 'main':
+../../echo_server_bsp/microblaze_0/include/xparameters.h:698:38: warning: unsigned conversion from 'int' to 'u16' {aka 'short unsigned int'} changes value from '1080033280' to '0' [-Woverflow]
+ #define XPAR_AXI_UARTLITE_0_BASEADDR 0x40600000
+                                      ^~~~~~~~~~
+../src/main.c:195:31: note: in expansion of macro 'XPAR_AXI_UARTLITE_0_BASEADDR'
+ #define XUARTLITE_BASEADDRESS XPAR_AXI_UARTLITE_0_BASEADDR
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:202:34: note: in expansion of macro 'XUARTLITE_BASEADDRESS'
+  XUartLite_Initialize(&UartLite, XUARTLITE_BASEADDRESS);
+                                  ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:334:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+At top level:
+../src/main.c:694:6: warning: 'PrintSourceMAC' defined but not used [-Wunused-function]
+ void PrintSourceMAC(u16 *RxFramePtr) {
+      ^~~~~~~~~~~~~~
+../src/main.c:328:13: warning: 'ProcessRecvFrame' defined but not used [-Wunused-function]
+ static void ProcessRecvFrame(XEmacLite *InstancePtr)
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: echo_server.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf" ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/mpuart.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: echo_server.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20492	   1764	  83672	 105928	  19dc8	echo_server.elf
+Finished building: echo_server.elf.size
+ 
+17:19:15 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:48:
+../src/main.c: In function 'main':
+../../echo_server_bsp/microblaze_0/include/xparameters.h:698:38: warning: unsigned conversion from 'int' to 'u16' {aka 'short unsigned int'} changes value from '1080033280' to '0' [-Woverflow]
+ #define XPAR_AXI_UARTLITE_0_BASEADDR 0x40600000
+                                      ^~~~~~~~~~
+../src/main.c:195:31: note: in expansion of macro 'XPAR_AXI_UARTLITE_0_BASEADDR'
+ #define XUARTLITE_BASEADDRESS XPAR_AXI_UARTLITE_0_BASEADDR
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:202:34: note: in expansion of macro 'XUARTLITE_BASEADDRESS'
+  XUartLite_Initialize(&UartLite, XUARTLITE_BASEADDRESS);
+                                  ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:340:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+At top level:
+../src/main.c:700:6: warning: 'PrintSourceMAC' defined but not used [-Wunused-function]
+ void PrintSourceMAC(u16 *RxFramePtr) {
+      ^~~~~~~~~~~~~~
+../src/main.c:334:13: warning: 'ProcessRecvFrame' defined but not used [-Wunused-function]
+ static void ProcessRecvFrame(XEmacLite *InstancePtr)
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: echo_server.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf" ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/mpuart.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: echo_server.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  15488	   1400	  83664	 100552	  188c8	echo_server.elf
+Finished building: echo_server.elf.size
+ 
+17:19:52 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:48:
+../src/main.c: In function 'main':
+../../echo_server_bsp/microblaze_0/include/xparameters.h:698:38: warning: unsigned conversion from 'int' to 'u16' {aka 'short unsigned int'} changes value from '1080033280' to '0' [-Woverflow]
+ #define XPAR_AXI_UARTLITE_0_BASEADDR 0x40600000
+                                      ^~~~~~~~~~
+../src/main.c:195:31: note: in expansion of macro 'XPAR_AXI_UARTLITE_0_BASEADDR'
+ #define XUARTLITE_BASEADDRESS XPAR_AXI_UARTLITE_0_BASEADDR
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:202:34: note: in expansion of macro 'XUARTLITE_BASEADDRESS'
+  XUartLite_Initialize(&UartLite, XUARTLITE_BASEADDRESS);
+                                  ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:341:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+At top level:
+../src/main.c:701:6: warning: 'PrintSourceMAC' defined but not used [-Wunused-function]
+ void PrintSourceMAC(u16 *RxFramePtr) {
+      ^~~~~~~~~~~~~~
+../src/main.c:335:13: warning: 'ProcessRecvFrame' defined but not used [-Wunused-function]
+ static void ProcessRecvFrame(XEmacLite *InstancePtr)
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: echo_server.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf" ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/mpuart.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: echo_server.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20504	   1764	  83668	 105936	  19dd0	echo_server.elf
+Finished building: echo_server.elf.size
+ 
+17:21:34 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:48:
+../src/main.c: In function 'main':
+../../echo_server_bsp/microblaze_0/include/xparameters.h:698:38: warning: unsigned conversion from 'int' to 'u16' {aka 'short unsigned int'} changes value from '1080033280' to '0' [-Woverflow]
+ #define XPAR_AXI_UARTLITE_0_BASEADDR 0x40600000
+                                      ^~~~~~~~~~
+../src/main.c:195:31: note: in expansion of macro 'XPAR_AXI_UARTLITE_0_BASEADDR'
+ #define XUARTLITE_BASEADDRESS XPAR_AXI_UARTLITE_0_BASEADDR
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:202:34: note: in expansion of macro 'XUARTLITE_BASEADDRESS'
+  XUartLite_Initialize(&UartLite, XUARTLITE_BASEADDRESS);
+                                  ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c: In function 'ProcessRecvFrame':
+../src/main.c:340:6: warning: variable 'NextTxBuffBaseAddr' set but not used [-Wunused-but-set-variable]
+  u32 NextTxBuffBaseAddr;
+      ^~~~~~~~~~~~~~~~~~
+At top level:
+../src/main.c:700:6: warning: 'PrintSourceMAC' defined but not used [-Wunused-function]
+ void PrintSourceMAC(u16 *RxFramePtr) {
+      ^~~~~~~~~~~~~~
+../src/main.c:334:13: warning: 'ProcessRecvFrame' defined but not used [-Wunused-function]
+ static void ProcessRecvFrame(XEmacLite *InstancePtr)
+             ^~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: echo_server.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../echo_server_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "echo_server.elf" ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/mpuart.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/xemaclite_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: echo_server.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size echo_server.elf  |tee "echo_server.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16484	   1400	  83668	 101552	  18cb0	echo_server.elf
+Finished building: echo_server.elf.size
+ 
+22:21:25 **** Auto Build of configuration Debug for project echo_server ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:54:10: fatal error: xscugic.h: No such file or directory
+ #include "xscugic.h"
+          ^~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:59: src/main.o] Error 1
+22:23:21 **** Build of project interruptuart_bsp ****
+make -k all 
+Running Make include in microblaze_0/libsrc/bram_v4_3/src
+make -C microblaze_0/libsrc/bram_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/cpu_v2_9/src
+make -C microblaze_0/libsrc/cpu_v2_9/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/ecemptcamip_v1_0/src
+make -C microblaze_0/libsrc/ecemptcamip_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/emaclite_v4_4/src
+make -C microblaze_0/libsrc/emaclite_v4_4/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/intc_v3_9/src
+make -C microblaze_0/libsrc/intc_v3_9/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/standalone_v7_0/src
+make -C microblaze_0/libsrc/standalone_v7_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/tmrctr_v4_5/src
+make -C microblaze_0/libsrc/tmrctr_v4_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/uartlite_v3_2/src
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make libs in microblaze_0/libsrc/bram_v4_3/src
+make -C microblaze_0/libsrc/bram_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling bram
+mb-ar: creating ../../../lib/libxil.a
+Running Make libs in microblaze_0/libsrc/cpu_v2_9/src
+make -C microblaze_0/libsrc/cpu_v2_9/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling cpu
+Running Make libs in microblaze_0/libsrc/ecemptcamip_v1_0/src
+make -C microblaze_0/libsrc/ecemptcamip_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling ecemptcamip...
+ecemptcamip_selftest.c: In function 'ECEMPTCAMIP_Reg_SelfTest':
+ecemptcamip_selftest.c:52:60: warning: comparison of integer expressions of different signedness: 'u32' {aka 'long unsigned int'} and 'int' [-Wsign-compare]
+    if ( ECEMPTCAMIP_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                            ^~
+ecemptcamip_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+Running Make libs in microblaze_0/libsrc/emaclite_v4_4/src
+make -C microblaze_0/libsrc/emaclite_v4_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling emaclite
+Running Make libs in microblaze_0/libsrc/intc_v3_9/src
+make -C microblaze_0/libsrc/intc_v3_9/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling intc
+Running Make libs in microblaze_0/libsrc/standalone_v7_0/src
+make -C microblaze_0/libsrc/standalone_v7_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling standalone
+microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+Running Make libs in microblaze_0/libsrc/tmrctr_v4_5/src
+make -C microblaze_0/libsrc/tmrctr_v4_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling tmrctr
+Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling uartlite
+Finished building libraries
+22:23:24 **** Build of configuration Debug for project interruptuart ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../interruptuart_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../interruptuart_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: interruptuart.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../interruptuart_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "interruptuart.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: interruptuart.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size interruptuart.elf  |tee "interruptuart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3188	    320	   3108	   6616	   19d8	interruptuart.elf
+Finished building: interruptuart.elf.size
+ 
+22:24:26 **** Incremental Build of configuration Debug for project interruptuart ****
+make all 
+make: Nothing to be done for 'all'.
+22:25:54 **** Incremental Build of configuration Debug for project interruptuart ****
+make all 
+make: Nothing to be done for 'all'.
+22:26:09 **** Incremental Build of configuration Debug for project echo_server ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../echo_server_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:54:10: fatal error: xscugic.h: No such file or directory
+ #include "xscugic.h"
+          ^~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:59: src/main.o] Error 1
+22:26:22 **** Incremental Build of configuration Debug for project test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size test.elf  |tee "test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9832	    684	   3108	  13624	   3538	test.elf
+Finished building: test.elf.size
+ 
+22:28:12 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for 'all'.
+22:28:56 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for 'all'.
+22:29:18 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for 'all'.
+22:29:37 **** Incremental Build of configuration Debug for project interruptuart ****
+make all 
+make: Nothing to be done for 'all'.
+22:30:35 **** Auto Build of configuration Debug for project interruptuart ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../interruptuart_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:63:30: error: 'XPAR_FABRIC_UARTLITE_0_VEC_ID' undeclared (first use in this function); did you mean 'XPAR_AXI_UARTLITE_0_DEVICE_ID'?
+ #define UARTLITE_IRPT_INTR   XPAR_FABRIC_UARTLITE_0_VEC_ID
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:159:10: note: in expansion of macro 'UARTLITE_IRPT_INTR'
+          UARTLITE_IRPT_INTR);
+          ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c:63:30: note: each undeclared identifier is reported only once for each function it appears in
+ #define UARTLITE_IRPT_INTR   XPAR_FABRIC_UARTLITE_0_VEC_ID
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:159:10: note: in expansion of macro 'UARTLITE_IRPT_INTR'
+          UARTLITE_IRPT_INTR);
+          ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'SetupInterruptSystem':
+../src/helloworld.c:402:19: error: 'UartLiteInstPtr' undeclared (first use in this function); did you mean 'UartLiteIntrId'?
+           (void *)UartLiteInstPtr);
+                   ^~~~~~~~~~~~~~~
+                   UartLiteIntrId
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+22:34:00 **** Auto Build of configuration Debug for project interruptuart ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../interruptuart_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:147:10: error: 'UARTLITE_DEVICE_ID' undeclared (first use in this function); did you mean 'XPAR_UARTLITE_0_DEVICE_ID'?
+          UARTLITE_DEVICE_ID,
+          ^~~~~~~~~~~~~~~~~~
+          XPAR_UARTLITE_0_DEVICE_ID
+../src/helloworld.c:147:10: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:148:10: error: 'UARTLITE_IRPT_INTR' undeclared (first use in this function)
+          UARTLITE_IRPT_INTR);
+          ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'SetupInterruptSystem':
+../src/helloworld.c:378:45: error: 'INTC_DEVICE_ID' undeclared (first use in this function); did you mean 'XST_DEVICE_BUSY'?
+  Status = XIntc_Initialize(IntcInstancePtr, INTC_DEVICE_ID);
+                                             ^~~~~~~~~~~~~~
+                                             XST_DEVICE_BUSY
+../src/helloworld.c:391:19: error: 'UartLiteInstPtr' undeclared (first use in this function); did you mean 'UartLiteIntrId'?
+           (void *)UartLiteInstPtr);
+                   ^~~~~~~~~~~~~~~
+                   UartLiteIntrId
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+22:34:19 **** Auto Build of configuration Debug for project interruptuart ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../interruptuart_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:76:25: error: unknown type name 'INTC'; did you mean 'INT8_C'?
+ int UartLiteIntrExample(INTC *IntcInstancePtr, XUartLite *UartLiteInstancePtr,
+                         ^~~~
+                         INT8_C
+../src/helloworld.c:84:33: error: unknown type name 'INTC'; did you mean 'INT8_C'?
+ static int SetupInterruptSystem(INTC *IntcInstancePtr,
+                                 ^~~~
+                                 INT8_C
+../src/helloworld.c:96:8: error: unknown type name 'INTC'
+ static INTC IntcInstance; /* The instance of the Interrupt Controller */
+        ^~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:138:11: warning: implicit declaration of function 'UartLiteIntrExample'; did you mean 'XUartLite_Initialize'? [-Wimplicit-function-declaration]
+  Status = UartLiteIntrExample(&IntcInstance, &UartLite,
+           ^~~~~~~~~~~~~~~~~~~
+           XUartLite_Initialize
+../src/helloworld.c:139:10: error: 'UARTLITE_DEVICE_ID' undeclared (first use in this function); did you mean 'XPAR_UARTLITE_0_DEVICE_ID'?
+          UARTLITE_DEVICE_ID,
+          ^~~~~~~~~~~~~~~~~~
+          XPAR_UARTLITE_0_DEVICE_ID
+../src/helloworld.c:139:10: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:140:10: error: 'UARTLITE_IRPT_INTR' undeclared (first use in this function)
+          UARTLITE_IRPT_INTR);
+          ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c: At top level:
+../src/helloworld.c:180:25: error: unknown type name 'INTC'; did you mean 'INT8_C'?
+ int UartLiteIntrExample(INTC *IntcInstancePtr, XUartLite *UartLiteInstPtr,
+                         ^~~~
+                         INT8_C
+../src/helloworld.c:358:33: error: unknown type name 'INTC'; did you mean 'INT8_C'?
+ static int SetupInterruptSystem(INTC *IntcInstancePtr,
+                                 ^~~~
+                                 INT8_C
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+22:34:25 **** Auto Build of configuration Debug for project interruptuart ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../interruptuart_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:80:33: error: unknown type name 'INTC'; did you mean 'INT8_C'?
+ static int SetupInterruptSystem(INTC *IntcInstancePtr,
+                                 ^~~~
+                                 INT8_C
+../src/helloworld.c:92:8: error: unknown type name 'INTC'
+ static INTC IntcInstance; /* The instance of the Interrupt Controller */
+        ^~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:135:10: error: 'UARTLITE_DEVICE_ID' undeclared (first use in this function); did you mean 'XPAR_UARTLITE_0_DEVICE_ID'?
+          UARTLITE_DEVICE_ID,
+          ^~~~~~~~~~~~~~~~~~
+          XPAR_UARTLITE_0_DEVICE_ID
+../src/helloworld.c:135:10: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:136:10: error: 'UARTLITE_IRPT_INTR' undeclared (first use in this function)
+          UARTLITE_IRPT_INTR);
+          ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c:134:31: warning: passing argument 1 of 'UartLiteIntrExample' from incompatible pointer type [-Wincompatible-pointer-types]
+  Status = UartLiteIntrExample(&IntcInstance, &UartLite,
+                               ^~~~~~~~~~~~~
+../src/helloworld.c:76:36: note: expected 'XUartLite *' {aka 'struct <anonymous> *'} but argument is of type 'int *'
+ int UartLiteIntrExample(XUartLite *UartLiteInstancePtr,
+                         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:134:46: warning: passing argument 2 of 'UartLiteIntrExample' makes integer from pointer without a cast [-Wint-conversion]
+  Status = UartLiteIntrExample(&IntcInstance, &UartLite,
+                                              ^~~~~~~~~
+../src/helloworld.c:77:12: note: expected 'UINTPTR' {aka 'unsigned int'} but argument is of type 'XUartLite *' {aka 'struct <anonymous> *'}
+    UINTPTR BaseAddress);
+    ~~~~~~~~^~~~~~~~~~~
+../src/helloworld.c:134:11: error: too many arguments to function 'UartLiteIntrExample'
+  Status = UartLiteIntrExample(&IntcInstance, &UartLite,
+           ^~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:76:5: note: declared here
+ int UartLiteIntrExample(XUartLite *UartLiteInstancePtr,
+     ^~~~~~~~~~~~~~~~~~~
+../src/helloworld.c: At top level:
+../src/helloworld.c:176:25: error: unknown type name 'INTC'; did you mean 'INT8_C'?
+ int UartLiteIntrExample(INTC *IntcInstancePtr, XUartLite *UartLiteInstPtr,
+                         ^~~~
+                         INT8_C
+../src/helloworld.c:354:33: error: unknown type name 'INTC'; did you mean 'INT8_C'?
+ static int SetupInterruptSystem(INTC *IntcInstancePtr,
+                                 ^~~~
+                                 INT8_C
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+22:34:35 **** Auto Build of configuration Debug for project interruptuart ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../interruptuart_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:88:8: error: unknown type name 'INTC'
+ static INTC IntcInstance; /* The instance of the Interrupt Controller */
+        ^~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:131:10: error: 'UARTLITE_DEVICE_ID' undeclared (first use in this function); did you mean 'XPAR_UARTLITE_0_DEVICE_ID'?
+          UARTLITE_DEVICE_ID,
+          ^~~~~~~~~~~~~~~~~~
+          XPAR_UARTLITE_0_DEVICE_ID
+../src/helloworld.c:131:10: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:132:10: error: 'UARTLITE_IRPT_INTR' undeclared (first use in this function)
+          UARTLITE_IRPT_INTR);
+          ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c:130:31: warning: passing argument 1 of 'UartLiteIntrExample' from incompatible pointer type [-Wincompatible-pointer-types]
+  Status = UartLiteIntrExample(&IntcInstance, &UartLite,
+                               ^~~~~~~~~~~~~
+../src/helloworld.c:76:36: note: expected 'XUartLite *' {aka 'struct <anonymous> *'} but argument is of type 'int *'
+ int UartLiteIntrExample(XUartLite *UartLiteInstancePtr,
+                         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:130:46: warning: passing argument 2 of 'UartLiteIntrExample' makes integer from pointer without a cast [-Wint-conversion]
+  Status = UartLiteIntrExample(&IntcInstance, &UartLite,
+                                              ^~~~~~~~~
+../src/helloworld.c:77:12: note: expected 'UINTPTR' {aka 'unsigned int'} but argument is of type 'XUartLite *' {aka 'struct <anonymous> *'}
+    UINTPTR BaseAddress);
+    ~~~~~~~~^~~~~~~~~~~
+../src/helloworld.c:130:11: error: too many arguments to function 'UartLiteIntrExample'
+  Status = UartLiteIntrExample(&IntcInstance, &UartLite,
+           ^~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:76:5: note: declared here
+ int UartLiteIntrExample(XUartLite *UartLiteInstancePtr,
+     ^~~~~~~~~~~~~~~~~~~
+../src/helloworld.c: At top level:
+../src/helloworld.c:172:25: error: unknown type name 'INTC'; did you mean 'INT8_C'?
+ int UartLiteIntrExample(INTC *IntcInstancePtr, XUartLite *UartLiteInstPtr,
+                         ^~~~
+                         INT8_C
+../src/helloworld.c:350:33: error: unknown type name 'INTC'; did you mean 'INT8_C'?
+ static int SetupInterruptSystem(INTC *IntcInstancePtr,
+                                 ^~~~
+                                 INT8_C
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+22:34:41 **** Auto Build of configuration Debug for project interruptuart ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../interruptuart_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:128:32: error: 'IntcInstance' undeclared (first use in this function)
+  Status = UartLiteIntrExample(&IntcInstance, &UartLite,
+                                ^~~~~~~~~~~~
+../src/helloworld.c:128:32: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:129:10: error: 'UARTLITE_DEVICE_ID' undeclared (first use in this function); did you mean 'XPAR_UARTLITE_0_DEVICE_ID'?
+          UARTLITE_DEVICE_ID,
+          ^~~~~~~~~~~~~~~~~~
+          XPAR_UARTLITE_0_DEVICE_ID
+../src/helloworld.c:130:10: error: 'UARTLITE_IRPT_INTR' undeclared (first use in this function)
+          UARTLITE_IRPT_INTR);
+          ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c:128:46: warning: passing argument 2 of 'UartLiteIntrExample' makes integer from pointer without a cast [-Wint-conversion]
+  Status = UartLiteIntrExample(&IntcInstance, &UartLite,
+                                              ^~~~~~~~~
+../src/helloworld.c:77:12: note: expected 'UINTPTR' {aka 'unsigned int'} but argument is of type 'XUartLite *' {aka 'struct <anonymous> *'}
+    UINTPTR BaseAddress);
+    ~~~~~~~~^~~~~~~~~~~
+../src/helloworld.c:128:11: error: too many arguments to function 'UartLiteIntrExample'
+  Status = UartLiteIntrExample(&IntcInstance, &UartLite,
+           ^~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:76:5: note: declared here
+ int UartLiteIntrExample(XUartLite *UartLiteInstancePtr,
+     ^~~~~~~~~~~~~~~~~~~
+../src/helloworld.c: At top level:
+../src/helloworld.c:170:25: error: unknown type name 'INTC'; did you mean 'INT8_C'?
+ int UartLiteIntrExample(INTC *IntcInstancePtr, XUartLite *UartLiteInstPtr,
+                         ^~~~
+                         INT8_C
+../src/helloworld.c:348:33: error: unknown type name 'INTC'; did you mean 'INT8_C'?
+ static int SetupInterruptSystem(INTC *IntcInstancePtr,
+                                 ^~~~
+                                 INT8_C
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+22:34:51 **** Auto Build of configuration Debug for project interruptuart ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../interruptuart_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:61:31: error: 'XPAR_XUARTLITE_0_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_UARTLITE_0_BASEADDR'?
+ #define XUARTLITE_BASEADDRESS XPAR_XUARTLITE_0_BASEADDR
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:128:42: note: in expansion of macro 'XUARTLITE_BASEADDRESS'
+  Status = UartLiteIntrExample(&UartLite, XUARTLITE_BASEADDRESS);
+                                          ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:61:31: note: each undeclared identifier is reported only once for each function it appears in
+ #define XUARTLITE_BASEADDRESS XPAR_XUARTLITE_0_BASEADDR
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:128:42: note: in expansion of macro 'XUARTLITE_BASEADDRESS'
+  Status = UartLiteIntrExample(&UartLite, XUARTLITE_BASEADDRESS);
+                                          ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c: At top level:
+../src/helloworld.c:165:25: error: unknown type name 'INTC'; did you mean 'INT8_C'?
+ int UartLiteIntrExample(INTC *IntcInstancePtr, XUartLite *UartLiteInstPtr,
+                         ^~~~
+                         INT8_C
+../src/helloworld.c:343:33: error: unknown type name 'INTC'; did you mean 'INT8_C'?
+ static int SetupInterruptSystem(INTC *IntcInstancePtr,
+                                 ^~~~
+                                 INT8_C
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+22:35:35 **** Auto Build of configuration Debug for project interruptuart ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../interruptuart_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:61:31: error: 'XPAR_XUARTLITE_0_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_UARTLITE_0_BASEADDR'?
+ #define XUARTLITE_BASEADDRESS XPAR_XUARTLITE_0_BASEADDR
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:128:42: note: in expansion of macro 'XUARTLITE_BASEADDRESS'
+  Status = UartLiteIntrExample(&UartLite, XUARTLITE_BASEADDRESS);
+                                          ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:61:31: note: each undeclared identifier is reported only once for each function it appears in
+ #define XUARTLITE_BASEADDRESS XPAR_XUARTLITE_0_BASEADDR
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:128:42: note: in expansion of macro 'XUARTLITE_BASEADDRESS'
+  Status = UartLiteIntrExample(&UartLite, XUARTLITE_BASEADDRESS);
+                                          ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'UartLiteIntrExample':
+../src/helloworld.c:193:11: warning: implicit declaration of function 'SetupInterruptSystem'; did you mean 'XIntc_InterruptHandler'? [-Wimplicit-function-declaration]
+  Status = SetupInterruptSystem(IntcInstancePtr, UartLiteInstPtr,
+           ^~~~~~~~~~~~~~~~~~~~
+           XIntc_InterruptHandler
+../src/helloworld.c:193:32: error: 'IntcInstancePtr' undeclared (first use in this function)
+  Status = SetupInterruptSystem(IntcInstancePtr, UartLiteInstPtr,
+                                ^~~~~~~~~~~~~~~
+../src/helloworld.c:194:11: error: 'UartLiteIntrId' undeclared (first use in this function); did you mean 'UartLiteInstPtr'?
+           UartLiteIntrId);
+           ^~~~~~~~~~~~~~
+           UartLiteInstPtr
+../src/helloworld.c:170:20: warning: variable 'CfgPtr' set but not used [-Wunused-but-set-variable]
+  XUartLite_Config *CfgPtr;
+                    ^~~~~~
+../src/helloworld.c: At top level:
+../src/helloworld.c:327:33: error: unknown type name 'INTC'; did you mean 'INT8_C'?
+ static int SetupInterruptSystem(INTC *IntcInstancePtr,
+                                 ^~~~
+                                 INT8_C
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+22:38:58 **** Auto Build of configuration Debug for project interruptuart ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../interruptuart_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:61:31: error: 'XPAR_XUARTLITE_0_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_UARTLITE_0_BASEADDR'?
+ #define XUARTLITE_BASEADDRESS XPAR_XUARTLITE_0_BASEADDR
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:128:42: note: in expansion of macro 'XUARTLITE_BASEADDRESS'
+  Status = UartLiteIntrExample(&UartLite, XUARTLITE_BASEADDRESS);
+                                          ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:61:31: note: each undeclared identifier is reported only once for each function it appears in
+ #define XUARTLITE_BASEADDRESS XPAR_XUARTLITE_0_BASEADDR
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:128:42: note: in expansion of macro 'XUARTLITE_BASEADDRESS'
+  Status = UartLiteIntrExample(&UartLite, XUARTLITE_BASEADDRESS);
+                                          ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'UartLiteIntrExample':
+../src/helloworld.c:194:11: warning: implicit declaration of function 'XSetupInterruptSystem'; did you mean 'XIntc_InterruptHandler'? [-Wimplicit-function-declaration]
+  Status = XSetupInterruptSystem(&UartLite, &XUartLite_InterruptHandler,
+           ^~~~~~~~~~~~~~~~~~~~~
+           XIntc_InterruptHandler
+../src/helloworld.c:195:18: error: 'XUartLite_Config' {aka 'struct <anonymous>'} has no member named 'IntrId'
+            CfgPtr->IntrId, CfgPtr->IntrParent,
+                  ^~
+../src/helloworld.c:195:34: error: 'XUartLite_Config' {aka 'struct <anonymous>'} has no member named 'IntrParent'
+            CfgPtr->IntrId, CfgPtr->IntrParent,
+                                  ^~
+../src/helloworld.c:196:12: error: 'XINTERRUPT_DEFAULT_PRIORITY' undeclared (first use in this function)
+            XINTERRUPT_DEFAULT_PRIORITY);
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c: At top level:
+../src/helloworld.c:329:33: error: unknown type name 'INTC'; did you mean 'INT8_C'?
+ static int SetupInterruptSystem(INTC *IntcInstancePtr,
+                                 ^~~~
+                                 INT8_C
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+22:40:36 **** Auto Build of configuration Debug for project interruptuart ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../interruptuart_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:61:31: error: 'XPAR_XUARTLITE_0_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_UARTLITE_0_BASEADDR'?
+ #define XUARTLITE_BASEADDRESS XPAR_XUARTLITE_0_BASEADDR
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:128:42: note: in expansion of macro 'XUARTLITE_BASEADDRESS'
+  Status = UartLiteIntrExample(&UartLite, XUARTLITE_BASEADDRESS);
+                                          ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:61:31: note: each undeclared identifier is reported only once for each function it appears in
+ #define XUARTLITE_BASEADDRESS XPAR_XUARTLITE_0_BASEADDR
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:128:42: note: in expansion of macro 'XUARTLITE_BASEADDRESS'
+  Status = UartLiteIntrExample(&UartLite, XUARTLITE_BASEADDRESS);
+                                          ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'UartLiteIntrExample':
+../src/helloworld.c:194:11: warning: implicit declaration of function 'XSetupInterruptSystem'; did you mean 'XIntc_InterruptHandler'? [-Wimplicit-function-declaration]
+  Status = XSetupInterruptSystem(&UartLite, &XUartLite_InterruptHandler,
+           ^~~~~~~~~~~~~~~~~~~~~
+           XIntc_InterruptHandler
+../src/helloworld.c:195:18: error: 'XUartLite_Config' {aka 'struct <anonymous>'} has no member named 'IntrId'
+            CfgPtr->IntrId, CfgPtr->IntrParent,
+                  ^~
+../src/helloworld.c:195:34: error: 'XUartLite_Config' {aka 'struct <anonymous>'} has no member named 'IntrParent'
+            CfgPtr->IntrId, CfgPtr->IntrParent,
+                                  ^~
+../src/helloworld.c:196:12: error: 'XINTERRUPT_DEFAULT_PRIORITY' undeclared (first use in this function)
+            XINTERRUPT_DEFAULT_PRIORITY);
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+22:41:08 **** Auto Build of configuration Debug for project interruptuart ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../interruptuart_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:61:31: error: 'XPAR_XUARTLITE_0_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_UARTLITE_0_BASEADDR'?
+ #define XUARTLITE_BASEADDRESS XPAR_XUARTLITE_0_BASEADDR
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:128:42: note: in expansion of macro 'XUARTLITE_BASEADDRESS'
+  Status = UartLiteIntrExample(&UartLite, XUARTLITE_BASEADDRESS);
+                                          ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:61:31: note: each undeclared identifier is reported only once for each function it appears in
+ #define XUARTLITE_BASEADDRESS XPAR_XUARTLITE_0_BASEADDR
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:128:42: note: in expansion of macro 'XUARTLITE_BASEADDRESS'
+  Status = UartLiteIntrExample(&UartLite, XUARTLITE_BASEADDRESS);
+                                          ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'UartLiteIntrExample':
+../src/helloworld.c:194:11: warning: implicit declaration of function 'XSetupInterruptSystem'; did you mean 'XIntc_InterruptHandler'? [-Wimplicit-function-declaration]
+  Status = XSetupInterruptSystem(&UartLite, &XUartLite_InterruptHandler,
+           ^~~~~~~~~~~~~~~~~~~~~
+           XIntc_InterruptHandler
+../src/helloworld.c:195:18: error: 'XUartLite_Config' {aka 'struct <anonymous>'} has no member named 'IntrId'
+            CfgPtr->IntrId, CfgPtr->IntrParent,
+                  ^~
+../src/helloworld.c:195:34: error: 'XUartLite_Config' {aka 'struct <anonymous>'} has no member named 'IntrParent'
+            CfgPtr->IntrId, CfgPtr->IntrParent,
+                                  ^~
+../src/helloworld.c:196:12: error: 'XINTERRUPT_DEFAULT_PRIORITY' undeclared (first use in this function)
+            XINTERRUPT_DEFAULT_PRIORITY);
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+22:41:30 **** Auto Build of configuration Debug for project interruptuart ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../interruptuart_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'UartLiteIntrExample':
+../src/helloworld.c:194:11: warning: implicit declaration of function 'XSetupInterruptSystem'; did you mean 'XIntc_InterruptHandler'? [-Wimplicit-function-declaration]
+  Status = XSetupInterruptSystem(&UartLite, &XUartLite_InterruptHandler,
+           ^~~~~~~~~~~~~~~~~~~~~
+           XIntc_InterruptHandler
+../src/helloworld.c:195:18: error: 'XUartLite_Config' {aka 'struct <anonymous>'} has no member named 'IntrId'
+            CfgPtr->IntrId, CfgPtr->IntrParent,
+                  ^~
+../src/helloworld.c:195:34: error: 'XUartLite_Config' {aka 'struct <anonymous>'} has no member named 'IntrParent'
+            CfgPtr->IntrId, CfgPtr->IntrParent,
+                                  ^~
+../src/helloworld.c:196:12: error: 'XINTERRUPT_DEFAULT_PRIORITY' undeclared (first use in this function)
+            XINTERRUPT_DEFAULT_PRIORITY);
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:196:12: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1

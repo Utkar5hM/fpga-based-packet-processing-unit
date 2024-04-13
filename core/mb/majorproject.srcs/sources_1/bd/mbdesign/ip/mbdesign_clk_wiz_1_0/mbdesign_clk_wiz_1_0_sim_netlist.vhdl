@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
--- Date        : Mon Jan 22 11:52:47 2024
--- Host        : utg14-win running 64-bit major release  (build 9200)
+-- Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+-- Date        : Mon Apr  8 13:25:19 2024
+-- Host        : g14arch running 64-bit unknown
 -- Command     : write_vhdl -force -mode funcsim
---               c:/Users/utkar/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_clk_wiz_1_0/mbdesign_clk_wiz_1_0_sim_netlist.vhdl
+--               /home/user/projects/mp/majorproject/majorproject.srcs/sources_1/bd/mbdesign/ip/mbdesign_clk_wiz_1_0/mbdesign_clk_wiz_1_0_sim_netlist.vhdl
 -- Design      : mbdesign_clk_wiz_1_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.

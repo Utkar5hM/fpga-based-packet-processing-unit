@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
 # Webtalk v2019.1 (64-bit)
-# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # 
-# Start of session at: Sun Apr  7 04:48:49 2024
-# Process ID: 26172
-# Current directory: C:/Users/utkar/majorproject/majorproject.sdk/webtalk
-# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
-# Log file: C:/Users/utkar/majorproject/majorproject.sdk/webtalk/webtalk.log
-# Journal file: C:/Users/utkar/majorproject/majorproject.sdk/webtalk\webtalk.jou
+# Start of session at: Tue Apr  9 01:45:53 2024
+# Process ID: 214223
+# Current directory: /home/user/projects/mp/majorproject/majorproject.sdk/webtalk
+# Command line: wbtcv -mode batch -source sdk_webtalk.tcl
+# Log file: /home/user/projects/mp/majorproject/majorproject.sdk/webtalk/webtalk.log
+# Journal file: /home/user/projects/mp/majorproject/majorproject.sdk/webtalk/webtalk.jou
 #-----------------------------------------------------------
 source sdk_webtalk.tcl

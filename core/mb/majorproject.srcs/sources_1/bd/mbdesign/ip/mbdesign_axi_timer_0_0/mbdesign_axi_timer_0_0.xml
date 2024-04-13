@@ -1214,7 +1214,7 @@ Read:      0 - No interrupt has occurred      1 - Interrupt has occurred  Write:
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Jan 22 06:23:29 UTC 2024</spirit:value>
+            <spirit:value>Mon Apr 08 07:55:55 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>

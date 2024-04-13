@@ -1,0 +1,21 @@
+03:58:05 **** Incremental Build of configuration Debug for project mpuart ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mpuart_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: mpuart.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpuart_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpuart.elf" ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: mpuart.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size mpuart.elf  |tee "mpuart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12360	    712	   6448	  19520	   4c40	mpuart.elf
+Finished building: mpuart.elf.size
+ 
+
+03:58:05 Build Finished (took 273ms)
+

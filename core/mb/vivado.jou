@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Apr 14 00:22:27 2024
+# Process ID: 7106
+# Current directory: /home/user/Xilinx/Vivado/2019.1/bin
+# Command line: vivado
+# Log file: /home/user/Xilinx/Vivado/2019.1/bin/vivado.log
+# Journal file: /home/user/Xilinx/Vivado/2019.1/bin/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/user/projects/mp/majorproject/majorproject.xpr
+update_compile_order -fileset sources_1
+launch_sdk -workspace /home/user/projects/mp/majorproject/majorproject.sdk -hwspec /home/user/projects/mp/majorproject/majorproject.sdk/mbdesign_wrapper.hdf
+archive_project /home/user/projects/mp/majorproject.xpr.zip -force -exclude_run_results -include_config_settings

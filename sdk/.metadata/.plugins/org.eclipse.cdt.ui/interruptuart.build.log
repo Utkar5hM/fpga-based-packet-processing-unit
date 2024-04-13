@@ -1,0 +1,24 @@
+22:41:30 **** Auto Build of configuration Debug for project interruptuart ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../interruptuart_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'UartLiteIntrExample':
+../src/helloworld.c:194:11: warning: implicit declaration of function 'XSetupInterruptSystem'; did you mean 'XIntc_InterruptHandler'? [-Wimplicit-function-declaration]
+  Status = XSetupInterruptSystem(&UartLite, &XUartLite_InterruptHandler,
+           ^~~~~~~~~~~~~~~~~~~~~
+           XIntc_InterruptHandler
+../src/helloworld.c:195:18: error: 'XUartLite_Config' {aka 'struct <anonymous>'} has no member named 'IntrId'
+            CfgPtr->IntrId, CfgPtr->IntrParent,
+                  ^~
+../src/helloworld.c:195:34: error: 'XUartLite_Config' {aka 'struct <anonymous>'} has no member named 'IntrParent'
+            CfgPtr->IntrId, CfgPtr->IntrParent,
+                                  ^~
+../src/helloworld.c:196:12: error: 'XINTERRUPT_DEFAULT_PRIORITY' undeclared (first use in this function)
+            XINTERRUPT_DEFAULT_PRIORITY);
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:196:12: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+
+22:41:30 Build Finished (took 227ms)
+

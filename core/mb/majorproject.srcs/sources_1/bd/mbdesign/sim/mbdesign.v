@@ -1,8 +1,8 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
-//Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-//Date        : Sat Apr  6 16:34:11 2024
-//Host        : utg14-win running 64-bit major release  (build 9200)
+//Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+//Date        : Tue Apr  9 01:41:57 2024
+//Host        : g14arch running 64-bit unknown
 //Command     : generate_target mbdesign.bd
 //Design      : mbdesign
 //Purpose     : IP block netlist
@@ -792,6 +792,7 @@ module mbdesign
   wire axi_timer_0_interrupt;
   wire axi_uartlite_0_UART_RxD;
   wire axi_uartlite_0_UART_TxD;
+  wire axi_uartlite_0_interrupt;
   wire clk_wiz_1_clk_out2;
   wire clk_wiz_1_clk_out3;
   wire clk_wiz_1_locked;
@@ -982,7 +983,7 @@ module mbdesign
   wire [0:1]microblaze_0_interrupt_ACK;
   wire [31:0]microblaze_0_interrupt_ADDRESS;
   wire microblaze_0_interrupt_INTERRUPT;
-  wire [1:0]microblaze_0_intr;
+  wire [2:0]microblaze_0_intr;
   wire [12:0]mig_7series_0_DDR2_ADDR;
   wire [2:0]mig_7series_0_DDR2_BA;
   wire mig_7series_0_DDR2_CAS_N;
@@ -1181,7 +1182,8 @@ module mbdesign
         .s_axi_wstrb(microblaze_0_axi_periph_M03_AXI_WSTRB),
         .s_axi_wvalid(microblaze_0_axi_periph_M03_AXI_WVALID));
   mbdesign_axi_uartlite_0_0 axi_uartlite_0
-       (.rx(axi_uartlite_0_UART_RxD),
+       (.interrupt(axi_uartlite_0_interrupt),
+        .rx(axi_uartlite_0_UART_RxD),
         .s_axi_aclk(microblaze_0_Clk),
         .s_axi_araddr(microblaze_0_axi_periph_M01_AXI_ARADDR[3:0]),
         .s_axi_aresetn(rst_clk_wiz_1_100M_peripheral_aresetn),
@@ -1525,6 +1527,7 @@ module mbdesign
   mbdesign_microblaze_0_xlconcat_0 microblaze_0_xlconcat
        (.In0(axi_timer_0_interrupt),
         .In1(axi_ethernetlite_0_ip2intc_irpt),
+        .In2(axi_uartlite_0_interrupt),
         .dout(microblaze_0_intr));
   mbdesign_mig_7series_0_0 mig_7series_0
        (.aresetn(rst_mig_7series_0_81M_peripheral_aresetn),
